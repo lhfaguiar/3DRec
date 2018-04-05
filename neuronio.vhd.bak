@@ -1,0 +1,38 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_unsigned.all;
+
+
+entity neuronio is
+port(A,B: in std_logic;
+SAI: out std_logic);
+end entity neuronio;
+
+
+architecture behavioral of neuronio is
+
+component XOR_func port(A,B: in std_logic;
+XOR_out: out std_logic);
+end component;
+
+begin
+
+xor_1: XOR_func port map (A,B,SAI);
+
+end behavioral;
+
+
+
+
+--FUNCAO XOR
+
+entity XOR_func is
+port(A,B: in std_logic;
+XOR_out: out std_logic);
+end entity XOR_func;
+
+architecture behavioural of XOR_func is
+begin
+XOR_out <= (A xor B);
+end behavioural; 
