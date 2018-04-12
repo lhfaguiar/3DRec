@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Gabriel/Documents/TCC/neuroniov01/neuronio.vhd
+source_file = 1, C:/Users/Gabriel/Documents/TCC/neuroniov01/XOR_func.vhd
+source_file = 1, C:/Users/Gabriel/Documents/TCC/neuroniov01/output_files/Chain2.cdf
+source_file = 1, C:/Users/Gabriel/Documents/TCC/neuroniov01/output_files/Chain3.cdf
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/Gabriel/Documents/TCC/neuroniov01/db/neuronio.cbx.xml
+design_name = neuronio
+instance = comp, \SAI~output\, SAI~output, neuronio, 1
+instance = comp, \A~input\, A~input, neuronio, 1
+instance = comp, \B~input\, B~input, neuronio, 1
+instance = comp, \xor_1|XOR_out\, xor_1|XOR_out, neuronio, 1

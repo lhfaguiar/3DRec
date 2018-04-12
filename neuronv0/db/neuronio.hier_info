@@ -1,0 +1,46 @@
+|neuronio
+A[3] => Mult0.IN3
+A[2] => Mult0.IN2
+A[1] => Mult0.IN1
+A[0] => Mult0.IN0
+B[3] => Mult1.IN3
+B[2] => Mult1.IN2
+B[1] => Mult1.IN1
+B[0] => Mult1.IN0
+TH[6] => step:step_func.UMBRAL[6]
+TH[5] => step:step_func.UMBRAL[5]
+TH[4] => step:step_func.UMBRAL[4]
+TH[3] => step:step_func.UMBRAL[3]
+TH[2] => step:step_func.UMBRAL[2]
+TH[1] => step:step_func.UMBRAL[1]
+TH[0] => step:step_func.UMBRAL[0]
+PesoA[1] => Mult0.IN5
+PesoA[0] => Mult0.IN4
+PesoB[1] => Mult1.IN5
+PesoB[0] => Mult1.IN4
+SAI <= step:step_func.SAL
+
+
+|neuronio|step:step_func
+A[5] => Add0.IN6
+A[4] => Add0.IN5
+A[3] => Add0.IN4
+A[2] => Add0.IN3
+A[1] => Add0.IN2
+A[0] => Add0.IN1
+B[5] => Add0.IN12
+B[4] => Add0.IN11
+B[3] => Add0.IN10
+B[2] => Add0.IN9
+B[1] => Add0.IN8
+B[0] => Add0.IN7
+UMBRAL[6] => LessThan0.IN14
+UMBRAL[5] => LessThan0.IN13
+UMBRAL[4] => LessThan0.IN12
+UMBRAL[3] => LessThan0.IN11
+UMBRAL[2] => LessThan0.IN10
+UMBRAL[1] => LessThan0.IN9
+UMBRAL[0] => LessThan0.IN8
+SAL <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
