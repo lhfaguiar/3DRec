@@ -1,5 +1,5 @@
 Flow report for neuron
-Thu Apr 19 10:59:37 2018
+Fri Apr 20 09:36:10 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Apr 19 10:59:37 2018       ;
+; Flow Status                     ; Successful - Fri Apr 20 09:36:10 2018       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; neuron                                      ;
 ; Top-level Entity Name           ; Neuron                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 16 / 18,480 ( < 1 % )                       ;
-; Total registers                 ; 1                                           ;
+; Logic utilization (in ALMs)     ; 17 / 18,480 ( < 1 % )                       ;
+; Total registers                 ; 16                                          ;
 ; Total pins                      ; 34 / 224 ( 15 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/19/2018 10:58:40 ;
+; Start date & time ; 04/20/2018 09:34:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; neuron              ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 163164131749340.152414632009611        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 163164131749340.152422769703671        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -98,12 +98,14 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 1015 MB             ; 00:00:33                           ;
-; Fitter                    ; 00:00:27     ; 1.0                     ; 1878 MB             ; 00:00:38                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 951 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.1                     ; 1067 MB             ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1127 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:54     ; --                      ; --                  ; 00:01:22                           ;
+; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 1018 MB             ; 00:00:31                           ;
+; Fitter                    ; 00:00:20     ; 1.0                     ; 1839 MB             ; 00:00:29                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 945 MB              ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 1067 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1126 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1110 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1113 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:46     ; --                      ; --                  ; 00:01:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,6 +119,8 @@ refer to the applicable agreement for further details.
 ; Assembler                 ; pizzaguy         ; Ubuntu 16.04.4 ; 16         ; x86_64         ;
 ; TimeQuest Timing Analyzer ; pizzaguy         ; Ubuntu 16.04.4 ; 16         ; x86_64         ;
 ; EDA Netlist Writer        ; pizzaguy         ; Ubuntu 16.04.4 ; 16         ; x86_64         ;
+; EDA Netlist Writer        ; pizzaguy         ; Ubuntu 16.04.4 ; 16         ; x86_64         ;
+; EDA Netlist Writer        ; pizzaguy         ; Ubuntu 16.04.4 ; 16         ; x86_64         ;
 +---------------------------+------------------+----------------+------------+----------------+
 
 
@@ -128,6 +132,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off neuron -c neuro
 quartus_asm --read_settings_files=off --write_settings_files=off neuron -c neuron
 quartus_sta neuron -c neuron
 quartus_eda --read_settings_files=off --write_settings_files=off neuron -c neuron
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off neuron -c neuron --vector_source=/home/gabriel/3DRecon/3DRec/neuronv1/Waveform.vwf --testbench_file=/home/gabriel/3DRecon/3DRec/neuronv1/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/gabriel/3DRecon/3DRec/neuronv1/simulation/qsim/ neuron -c neuron
 
 
 

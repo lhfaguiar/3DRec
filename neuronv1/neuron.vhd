@@ -1,11 +1,9 @@
 ----------------------------------------------------------------------------------
---Engineer: Gabriel Piazzalunga Based on the work of
---                                       Diego Ceresuela, Oscar Clemente.
+--Engineer: Gabriel Piazzalunga
 -- 
 -- Create Date: 13/4 
 -- Module Name: Neuron - Behavioral
--- Description: Implements a neuron prepared to be connected into a network using an aproximation of the sigmoid
---  function based on a ROM and using Q15.16 signed codification.
+-- Description: Implements a neuron prepared to be connected into a network 
 -- 
 -- Dependencies: sigmoid.vhd data_types.vhd adder_tree.vhd
 -- 
@@ -25,12 +23,12 @@ entity Neuron is
 end Neuron;
 
 architecture Behavioral of Neuron is
-    component sig_altmult_accum
+    component mac
     port 
 	(	a			: in signed(7 downto 0);
 		b			: in signed (7 downto 0);
 		clk			: in std_logic;
-		sload		: in std_logic;
+		rst		: in std_logic;
 		accum_out	: out signed (15 downto 0)
 	);
     end component;
@@ -43,14 +41,16 @@ architecture Behavioral of Neuron is
     end component;
 	 
 	 
-    signal accum_out : signed(15 downto 0); --:=> x"0000000000000000";
+    signal accum_out : signed(15 downto 0) := "0000000000000000";
+	 signal teste: signed(15 downto 0);
 	 signal Xin, Win : signed (7 downto 0);
 	 signal Out_RELU: signed (15 downto 0);
     --signal Y : STD_LOGIC_VECTOR (31 downto 0); ; 
 begin
+	--teste <= "0010000000001000";
 	Xin <= signed(slv_Xin);
 	Win <= signed(slv_Win);
-	Mult_Accum: sig_altmult_accum port map (Xin,Win,clk,RST,accum_out); 
+	Mult_Accum: mac port map (Xin,Win,clk,RST,accum_out); 
    Activation : RELU port map (accum_out,Out_RELU);
 	O <= std_logic_vector(Out_RELU);
 end Behavioral;

@@ -68,35 +68,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "slv_Win[0]",
-					"strict" : false
-				},
-				{
-					"name" : "slv_Win[1]",
-					"strict" : false
-				},
-				{
-					"name" : "slv_Win[2]",
-					"strict" : false
-				},
-				{
-					"name" : "slv_Win[3]",
-					"strict" : false
-				},
-				{
-					"name" : "slv_Win[4]",
-					"strict" : false
-				},
-				{
-					"name" : "slv_Win[5]",
-					"strict" : false
-				},
-				{
-					"name" : "slv_Win[6]",
-					"strict" : false
-				},
-				{
-					"name" : "slv_Win[7]",
+					"name" : "RST",
 					"strict" : false
 				},
 				{
@@ -132,7 +104,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "RST",
+					"name" : "slv_Win[0]",
+					"strict" : false
+				},
+				{
+					"name" : "slv_Win[1]",
+					"strict" : false
+				},
+				{
+					"name" : "slv_Win[2]",
+					"strict" : false
+				},
+				{
+					"name" : "slv_Win[3]",
+					"strict" : false
+				},
+				{
+					"name" : "slv_Win[4]",
+					"strict" : false
+				},
+				{
+					"name" : "slv_Win[5]",
+					"strict" : false
+				},
+				{
+					"name" : "slv_Win[6]",
+					"strict" : false
+				},
+				{
+					"name" : "slv_Win[7]",
 					"strict" : false
 				}
 			]

@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Apr 19 10:59:23 2018
+Fitter Status : Successful - Fri Apr 20 09:35:31 2018
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : neuron
 Top-level Entity Name : Neuron
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 16 / 18,480 ( < 1 % )
-Total registers : 1
+Logic utilization (in ALMs) : 17 / 18,480 ( < 1 % )
+Total registers : 16
 Total pins : 34 / 224 ( 15 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )

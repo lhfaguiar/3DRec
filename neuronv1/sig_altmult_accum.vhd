@@ -21,7 +21,7 @@ architecture rtl of sig_altmult_accum is
 	signal b_reg : signed (7 downto 0);
 	signal sload_reg : std_logic;
 	signal mult_reg : signed (15 downto 0);
-	signal adder_out : signed (15 downto 0);
+	signal adder_out : signed (15 downto 0) := "0000000000000000";
 	signal old_result : signed (15 downto 0);
 
 begin

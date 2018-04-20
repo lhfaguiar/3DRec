@@ -1,0 +1,37 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity mac is
+	port 
+	(
+		a			: in signed(7 downto 0);
+		b			: in signed (7 downto 0);
+		clk			: in std_logic;
+		rst		: in std_logic;
+		accum_out	: out signed (15 downto 0)
+	);
+	
+end entity;
+
+architecture rtl of mac is
+
+	-- Declare registers for intermediate values
+	signal prod,reg: (15 downto 0);
+
+begin
+	
+	process (rst,clk)
+		variable sum: signed (15 downto 0);
+	begin
+		prod <= a * b;
+		IF (rst='1') THEN
+			reg <= (OTHERS => '0');
+		ELSIF (clk'EVENT AND clk='1') THEN
+			sum := add_truncate (prod,reg,16);
+			reg <= sum;
+		END IF;
+	accum_out <= reg;
+	end process;
+	
+end rtl;
