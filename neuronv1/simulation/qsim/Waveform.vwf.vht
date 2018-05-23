@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "04/20/2018 09:36:08"
+-- Generated on "05/23/2018 09:03:19"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Neuron
 -- 
@@ -116,11 +116,19 @@ END PROCESS t_prcs_slv_Win_2;
 t_prcs_slv_Win_1: PROCESS
 BEGIN
 	slv_Win(1) <= '0';
+	WAIT FOR 620000 ps;
+	slv_Win(1) <= '1';
+	WAIT FOR 220000 ps;
+	slv_Win(1) <= '0';
 WAIT;
 END PROCESS t_prcs_slv_Win_1;
 -- slv_Win[0]
 t_prcs_slv_Win_0: PROCESS
 BEGIN
+	slv_Win(0) <= '1';
+	WAIT FOR 620000 ps;
+	slv_Win(0) <= '0';
+	WAIT FOR 220000 ps;
 	slv_Win(0) <= '1';
 WAIT;
 END PROCESS t_prcs_slv_Win_0;

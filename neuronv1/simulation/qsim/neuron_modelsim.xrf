@@ -1,12 +1,12 @@
 vendor_name = ModelSim
-source_file = 1, /home/gabriel/3DRecon/3DRec/neuronv1/regn_8.vhd
+source_file = 1, regn_8.vhd
 source_file = 1, /home/gabriel/3DRecon/3DRec/neuronv1/neuron.vhd
-source_file = 1, /home/gabriel/3DRecon/3DRec/neuronv1/adder_tree.vhd
-source_file = 1, /home/gabriel/3DRecon/3DRec/neuronv1/sigmoide.vhd
+source_file = 1, adder_tree.vhd
+source_file = 1, sigmoide.vhd
 source_file = 1, /home/gabriel/3DRecon/3DRec/neuronv1/data_types.vhd
-source_file = 1, /home/gabriel/3DRecon/3DRec/neuronv1/sig_altmult_accum.vhd
+source_file = 1, sig_altmult_accum.vhd
 source_file = 1, /home/gabriel/3DRecon/3DRec/neuronv1/RELU.vhd
-source_file = 1, /home/gabriel/3DRecon/3DRec/neuronv1/regn_16.vhd
+source_file = 1, regn_16.vhd
 source_file = 1, /home/gabriel/3DRecon/3DRec/neuronv1/Waveform.vwf
 source_file = 1, /home/gabriel/3DRecon/3DRec/neuronv1/mac.vhd
 source_file = 1, /home/gabriel/3DRecon/3DRec/neuronv1/my_functions.vhd
