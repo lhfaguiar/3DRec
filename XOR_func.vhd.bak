@@ -1,0 +1,11 @@
+--FUNCAO XOR
+
+entity XOR_func is
+Port(A1,B1: in std_logic;
+XOR_out: out std_logic);
+end XOR_func;
+
+architecture behavioural of XOR_func is
+begin
+XOR_out <= (A1 xor B1);
+end behavioural; 

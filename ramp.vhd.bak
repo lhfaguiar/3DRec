@@ -1,0 +1,22 @@
+--RAMPA
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_unsigned.all;
+
+entity ramp is
+port(A,B: in integer range 0 to 15;
+SATURACION: in integer range 0 to
+31;
+SAL: out integer range 0 to 31);
+end entity ramp;
+architecture behavioral of ramp is
+signal TH,SUMA : integer range 0 to 31;
+signal A1, B1: integer range 0 to 31;
+begin
+A1<=A;
+B1<=B;
+TH<=SATURACION;
+SUMA<=A1+B1;
+SAL<=SUMA when SUMA<TH else TH;
+end architecture behavioral; 
