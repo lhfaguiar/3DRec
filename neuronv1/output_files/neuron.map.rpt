@@ -1,6 +1,6 @@
 Analysis & Synthesis report for neuron
-Wed May 23 09:00:57 2018
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Sat Oct 27 16:23:49 2018
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -25,7 +25,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -44,8 +44,8 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 23 09:00:57 2018       ;
-; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Sat Oct 27 16:23:49 2018       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; neuron                                      ;
 ; Top-level Entity Name           ; Neuron                                      ;
 ; Family                          ; Cyclone V                                   ;
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 ; Top-level entity name                                                           ; neuron             ; neuron             ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
 ; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
@@ -156,28 +156,28 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                 ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; neuron.vhd                       ; yes             ; User VHDL File  ; /home/gabriel/3DRecon/3DRec/neuronv1/neuron.vhd       ;         ;
-; RELU.vhd                         ; yes             ; User VHDL File  ; /home/gabriel/3DRecon/3DRec/neuronv1/RELU.vhd         ;         ;
-; mac.vhd                          ; yes             ; User VHDL File  ; /home/gabriel/3DRecon/3DRec/neuronv1/mac.vhd          ;         ;
-; my_functions.vhd                 ; yes             ; User VHDL File  ; /home/gabriel/3DRecon/3DRec/neuronv1/my_functions.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                  ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
+; neuron.vhd                       ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv1/neuron.vhd       ;         ;
+; RELU.vhd                         ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv1/RELU.vhd         ;         ;
+; mac.vhd                          ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv1/mac.vhd          ;         ;
+; my_functions.vhd                 ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv1/my_functions.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------+
@@ -284,7 +284,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -293,39 +293,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed May 23 09:00:42 2018
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Oct 27 16:23:36 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off neuron -c neuron
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12019): Can't analyze file -- file regn_8.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file neuron.vhd
-    Info (12022): Found design unit 1: Neuron-Behavioral File: /home/gabriel/3DRecon/3DRec/neuronv1/neuron.vhd Line: 25
-    Info (12023): Found entity 1: Neuron File: /home/gabriel/3DRecon/3DRec/neuronv1/neuron.vhd Line: 17
+    Info (12022): Found design unit 1: Neuron-Behavioral File: /home/gabriel/3DRec/neuronv1/neuron.vhd Line: 25
+    Info (12023): Found entity 1: Neuron File: /home/gabriel/3DRec/neuronv1/neuron.vhd Line: 17
 Warning (12019): Can't analyze file -- file adder_tree.vhd is missing
 Warning (12019): Can't analyze file -- file sigmoide.vhd is missing
 Info (12021): Found 2 design units, including 0 entities, in source file data_types.vhd
-    Info (12022): Found design unit 1: data_types File: /home/gabriel/3DRecon/3DRec/neuronv1/data_types.vhd Line: 14
-    Info (12022): Found design unit 2: data_types-body File: /home/gabriel/3DRecon/3DRec/neuronv1/data_types.vhd Line: 20
+    Info (12022): Found design unit 1: data_types File: /home/gabriel/3DRec/neuronv1/data_types.vhd Line: 14
+    Info (12022): Found design unit 2: data_types-body File: /home/gabriel/3DRec/neuronv1/data_types.vhd Line: 20
 Warning (12019): Can't analyze file -- file sig_altmult_accum.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file RELU.vhd
-    Info (12022): Found design unit 1: RELU-Behavioral File: /home/gabriel/3DRecon/3DRec/neuronv1/RELU.vhd Line: 12
-    Info (12023): Found entity 1: RELU File: /home/gabriel/3DRecon/3DRec/neuronv1/RELU.vhd Line: 5
+    Info (12022): Found design unit 1: RELU-Behavioral File: /home/gabriel/3DRec/neuronv1/RELU.vhd Line: 12
+    Info (12023): Found entity 1: RELU File: /home/gabriel/3DRec/neuronv1/RELU.vhd Line: 5
 Warning (12019): Can't analyze file -- file regn_16.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file mac.vhd
-    Info (12022): Found design unit 1: mac-rtl File: /home/gabriel/3DRecon/3DRec/neuronv1/mac.vhd Line: 18
-    Info (12023): Found entity 1: mac File: /home/gabriel/3DRecon/3DRec/neuronv1/mac.vhd Line: 6
+    Info (12022): Found design unit 1: mac-rtl File: /home/gabriel/3DRec/neuronv1/mac.vhd Line: 18
+    Info (12023): Found entity 1: mac File: /home/gabriel/3DRec/neuronv1/mac.vhd Line: 6
 Info (12021): Found 2 design units, including 0 entities, in source file my_functions.vhd
-    Info (12022): Found design unit 1: my_functions File: /home/gabriel/3DRecon/3DRec/neuronv1/my_functions.vhd Line: 6
-    Info (12022): Found design unit 2: my_functions-body File: /home/gabriel/3DRecon/3DRec/neuronv1/my_functions.vhd Line: 11
+    Info (12022): Found design unit 1: my_functions File: /home/gabriel/3DRec/neuronv1/my_functions.vhd Line: 6
+    Info (12022): Found design unit 2: my_functions-body File: /home/gabriel/3DRec/neuronv1/my_functions.vhd Line: 11
 Info (12127): Elaborating entity "neuron" for the top level hierarchy
-Info (12128): Elaborating entity "mac" for hierarchy "mac:Mult_Accum" File: /home/gabriel/3DRecon/3DRec/neuronv1/neuron.vhd Line: 53
-Warning (10492): VHDL Process Statement warning at mac.vhd(28): signal "a" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gabriel/3DRecon/3DRec/neuronv1/mac.vhd Line: 28
-Warning (10492): VHDL Process Statement warning at mac.vhd(28): signal "b" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gabriel/3DRecon/3DRec/neuronv1/mac.vhd Line: 28
-Warning (10492): VHDL Process Statement warning at mac.vhd(35): signal "reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gabriel/3DRecon/3DRec/neuronv1/mac.vhd Line: 35
-Info (12128): Elaborating entity "RELU" for hierarchy "RELU:Activation" File: /home/gabriel/3DRecon/3DRec/neuronv1/neuron.vhd Line: 54
+Info (12128): Elaborating entity "mac" for hierarchy "mac:Mult_Accum" File: /home/gabriel/3DRec/neuronv1/neuron.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at mac.vhd(28): signal "a" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gabriel/3DRec/neuronv1/mac.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at mac.vhd(28): signal "b" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gabriel/3DRec/neuronv1/mac.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at mac.vhd(35): signal "reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gabriel/3DRec/neuronv1/mac.vhd Line: 35
+Info (12128): Elaborating entity "RELU" for hierarchy "RELU:Activation" File: /home/gabriel/3DRec/neuronv1/neuron.vhd Line: 54
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "O[15]" is stuck at GND File: /home/gabriel/3DRecon/3DRec/neuronv1/neuron.vhd Line: 22
+    Warning (13410): Pin "O[15]" is stuck at GND File: /home/gabriel/3DRec/neuronv1/neuron.vhd Line: 22
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -335,9 +335,9 @@ Info (21057): Implemented 69 device resources after synthesis - the final resour
     Info (21061): Implemented 34 logic cells
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 1028 megabytes
-    Info: Processing ended: Wed May 23 09:00:57 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Peak virtual memory: 1060 megabytes
+    Info: Processing ended: Sat Oct 27 16:23:49 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:23
 
 

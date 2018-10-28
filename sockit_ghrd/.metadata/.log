@@ -1,0 +1,46 @@
+!SESSION 2018-10-27 20:51:13.103 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product com.arm.ds.ulteval
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.arm.ds.ulteval
+
+!ENTRY org.python.pydev.shared_core 1 1 2018-10-27 20:51:33.748
+!MESSAGE Restoring info for: /home/gabriel/intelFPGA/18.1/embedded/ds-5/sw/eclipse/dropins/plugins/com.arm.tpip.jython_2.7.0.20180726_191506/lib/jython-2.7.0-standalone.jar
+!STACK 0
+java.lang.RuntimeException: Restoring info for: /home/gabriel/intelFPGA/18.1/embedded/ds-5/sw/eclipse/dropins/plugins/com.arm.tpip.jython_2.7.0.20180726_191506/lib/jython-2.7.0-standalone.jar
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:529)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:345)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:655)
+	at com.arm.pydev.StartupListener.updateConfig(StartupListener.java:222)
+	at com.arm.pydev.StartupListener.earlyStartup(StartupListener.java:81)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2835)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: Expecting: /home/gabriel/sockit_ghrd/.metadata/.plugins/org.python.pydev/v1_2ao5iy322fd45f2kkjl5954x4/modulesKeys to exist (and be a file).
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:293)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:397)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:527)
+	... 9 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2018-10-27 20:51:34.019
+!MESSAGE Finished restoring information for: /home/gabriel/intelFPGA/18.1/embedded/ds-5/sw/eclipse/dropins/plugins/com.arm.tpip.jython_2.7.0.20180726_191506/lib/jython-2.7.0-standalone.jar at: /home/gabriel/sockit_ghrd/.metadata/.plugins/org.python.pydev/v1_2ao5iy322fd45f2kkjl5954x4
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: /home/gabriel/intelFPGA/18.1/embedded/ds-5/sw/eclipse/dropins/plugins/com.arm.tpip.jython_2.7.0.20180726_191506/lib/jython-2.7.0-standalone.jar at: /home/gabriel/sockit_ghrd/.metadata/.plugins/org.python.pydev/v1_2ao5iy322fd45f2kkjl5954x4
+	at org.python.pydev.core.log.Log.logInfo(Log.java:66)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:574)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:345)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:655)
+	at com.arm.pydev.StartupListener.updateConfig(StartupListener.java:222)
+	at com.arm.pydev.StartupListener.earlyStartup(StartupListener.java:81)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2835)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.python.pydev.shared_core 4 4 2018-10-27 20:51:34.184
+!MESSAGE Info: Rebuilding internal caches: /home/gabriel/sockit_ghrd/.metadata/.plugins/com.python.pydev.analysis/jython_v1_2ao5iy322fd45f2kkjl5954x4/jython.pydevsysteminfo (Expected error to be provided and got no error!)

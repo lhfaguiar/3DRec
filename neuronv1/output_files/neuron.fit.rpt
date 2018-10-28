@@ -1,6 +1,6 @@
 Fitter report for neuron
-Wed May 23 09:01:24 2018
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Sat Oct 27 16:24:11 2018
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -44,7 +44,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -63,8 +63,8 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed May 23 09:01:24 2018       ;
-; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Fitter Status                   ; Successful - Sat Oct 27 16:24:11 2018       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; neuron                                      ;
 ; Top-level Entity Name           ; Neuron                                      ;
 ; Family                          ; Cyclone V                                   ;
@@ -86,63 +86,63 @@ refer to the applicable agreement for further details.
 +---------------------------------+---------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Settings                                                                                                                                            ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
-; Option                                                                     ; Setting                               ; Default Value                         ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
-; Device                                                                     ; 5CEBA4F23C7                           ;                                       ;
-; Minimum Core Junction Temperature                                          ; 0                                     ;                                       ;
-; Maximum Core Junction Temperature                                          ; 85                                    ;                                       ;
-; Use smart compilation                                                      ; Off                                   ; Off                                   ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On                                    ;
-; Enable compact report table                                                ; Off                                   ; Off                                   ;
-; Router Timing Optimization Level                                           ; Normal                                ; Normal                                ;
-; Perform Clocking Topology Analysis During Routing                          ; Off                                   ; Off                                   ;
-; Placement Effort Multiplier                                                ; 1.0                                   ; 1.0                                   ;
-; Device initialization clock source                                         ; INIT_INTOSC                           ; INIT_INTOSC                           ;
-; Optimize Hold Timing                                                       ; All Paths                             ; All Paths                             ;
-; Optimize Multi-Corner Timing                                               ; On                                    ; On                                    ;
-; Auto RAM to MLAB Conversion                                                ; On                                    ; On                                    ;
-; Equivalent RAM and MLAB Power Up                                           ; Auto                                  ; Auto                                  ;
-; Equivalent RAM and MLAB Paused Read Capabilities                           ; Care                                  ; Care                                  ;
-; Power Optimization During Fitting                                          ; Normal compilation                    ; Normal compilation                    ;
-; SSN Optimization                                                           ; Off                                   ; Off                                   ;
-; Optimize Timing                                                            ; Normal compilation                    ; Normal compilation                    ;
-; Optimize Timing for ECOs                                                   ; Off                                   ; Off                                   ;
-; Regenerate Full Fit Report During ECO Compiles                             ; Off                                   ; Off                                   ;
-; Optimize IOC Register Placement for Timing                                 ; Normal                                ; Normal                                ;
-; Final Placement Optimizations                                              ; Automatically                         ; Automatically                         ;
-; Fitter Aggressive Routability Optimizations                                ; Automatically                         ; Automatically                         ;
-; Fitter Initial Placement Seed                                              ; 1                                     ; 1                                     ;
-; Periphery to Core Placement and Routing Optimization                       ; Off                                   ; Off                                   ;
-; Weak Pull-Up Resistor                                                      ; Off                                   ; Off                                   ;
-; Enable Bus-Hold Circuitry                                                  ; Off                                   ; Off                                   ;
-; Auto Packed Registers                                                      ; Auto                                  ; Auto                                  ;
-; Auto Delay Chains                                                          ; On                                    ; On                                    ;
-; Auto Delay Chains for High Fanout Input Pins                               ; Off                                   ; Off                                   ;
-; Treat Bidirectional Pin as Output Pin                                      ; Off                                   ; Off                                   ;
-; Perform Physical Synthesis for Combinational Logic for Fitting             ; Off                                   ; Off                                   ;
-; Perform Physical Synthesis for Combinational Logic for Performance         ; Off                                   ; Off                                   ;
-; Perform Register Duplication for Performance                               ; Off                                   ; Off                                   ;
-; Perform Register Retiming for Performance                                  ; Off                                   ; Off                                   ;
-; Perform Asynchronous Signal Pipelining                                     ; Off                                   ; Off                                   ;
-; Fitter Effort                                                              ; Auto Fit                              ; Auto Fit                              ;
-; Physical Synthesis Effort Level                                            ; Normal                                ; Normal                                ;
-; Logic Cell Insertion - Logic Duplication                                   ; Auto                                  ; Auto                                  ;
-; Auto Register Duplication                                                  ; Auto                                  ; Auto                                  ;
-; Auto Global Clock                                                          ; On                                    ; On                                    ;
-; Auto Global Register Control Signals                                       ; On                                    ; On                                    ;
-; Reserve all unused pins                                                    ; As input tri-stated with weak pull-up ; As input tri-stated with weak pull-up ;
-; Synchronizer Identification                                                ; Auto                                  ; Auto                                  ;
-; Enable Beneficial Skew Optimization                                        ; On                                    ; On                                    ;
-; Optimize Design for Metastability                                          ; On                                    ; On                                    ;
-; Active Serial clock source                                                 ; FREQ_100MHz                           ; FREQ_100MHz                           ;
-; Force Fitter to Avoid Periphery Placement Warnings                         ; Off                                   ; Off                                   ;
-; Clamping Diode                                                             ; Off                                   ; Off                                   ;
-; Enable input tri-state on active configuration pins in user mode           ; Off                                   ; Off                                   ;
-; Advanced Physical Optimization                                             ; On                                    ; On                                    ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                                                                    ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
+; Option                                                             ; Setting                               ; Default Value                         ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
+; Device                                                             ; 5CEBA4F23C7                           ;                                       ;
+; Minimum Core Junction Temperature                                  ; 0                                     ;                                       ;
+; Maximum Core Junction Temperature                                  ; 85                                    ;                                       ;
+; Use smart compilation                                              ; Off                                   ; Off                                   ;
+; Enable parallel Assembler and Timing Analyzer during compilation   ; On                                    ; On                                    ;
+; Enable compact report table                                        ; Off                                   ; Off                                   ;
+; Router Timing Optimization Level                                   ; Normal                                ; Normal                                ;
+; Perform Clocking Topology Analysis During Routing                  ; Off                                   ; Off                                   ;
+; Placement Effort Multiplier                                        ; 1.0                                   ; 1.0                                   ;
+; Device initialization clock source                                 ; INIT_INTOSC                           ; INIT_INTOSC                           ;
+; Optimize Hold Timing                                               ; All Paths                             ; All Paths                             ;
+; Optimize Multi-Corner Timing                                       ; On                                    ; On                                    ;
+; Auto RAM to MLAB Conversion                                        ; On                                    ; On                                    ;
+; Equivalent RAM and MLAB Power Up                                   ; Auto                                  ; Auto                                  ;
+; Equivalent RAM and MLAB Paused Read Capabilities                   ; Care                                  ; Care                                  ;
+; Power Optimization During Fitting                                  ; Normal compilation                    ; Normal compilation                    ;
+; SSN Optimization                                                   ; Off                                   ; Off                                   ;
+; Optimize Timing                                                    ; Normal compilation                    ; Normal compilation                    ;
+; Optimize Timing for ECOs                                           ; Off                                   ; Off                                   ;
+; Regenerate Full Fit Report During ECO Compiles                     ; Off                                   ; Off                                   ;
+; Optimize IOC Register Placement for Timing                         ; Normal                                ; Normal                                ;
+; Final Placement Optimizations                                      ; Automatically                         ; Automatically                         ;
+; Fitter Aggressive Routability Optimizations                        ; Automatically                         ; Automatically                         ;
+; Fitter Initial Placement Seed                                      ; 1                                     ; 1                                     ;
+; Periphery to Core Placement and Routing Optimization               ; Off                                   ; Off                                   ;
+; Weak Pull-Up Resistor                                              ; Off                                   ; Off                                   ;
+; Enable Bus-Hold Circuitry                                          ; Off                                   ; Off                                   ;
+; Auto Packed Registers                                              ; Auto                                  ; Auto                                  ;
+; Auto Delay Chains                                                  ; On                                    ; On                                    ;
+; Auto Delay Chains for High Fanout Input Pins                       ; Off                                   ; Off                                   ;
+; Treat Bidirectional Pin as Output Pin                              ; Off                                   ; Off                                   ;
+; Perform Physical Synthesis for Combinational Logic for Fitting     ; Off                                   ; Off                                   ;
+; Perform Physical Synthesis for Combinational Logic for Performance ; Off                                   ; Off                                   ;
+; Perform Register Duplication for Performance                       ; Off                                   ; Off                                   ;
+; Perform Register Retiming for Performance                          ; Off                                   ; Off                                   ;
+; Perform Asynchronous Signal Pipelining                             ; Off                                   ; Off                                   ;
+; Fitter Effort                                                      ; Auto Fit                              ; Auto Fit                              ;
+; Physical Synthesis Effort Level                                    ; Normal                                ; Normal                                ;
+; Logic Cell Insertion - Logic Duplication                           ; Auto                                  ; Auto                                  ;
+; Auto Register Duplication                                          ; Auto                                  ; Auto                                  ;
+; Auto Global Clock                                                  ; On                                    ; On                                    ;
+; Auto Global Register Control Signals                               ; On                                    ; On                                    ;
+; Reserve all unused pins                                            ; As input tri-stated with weak pull-up ; As input tri-stated with weak pull-up ;
+; Synchronizer Identification                                        ; Auto                                  ; Auto                                  ;
+; Enable Beneficial Skew Optimization                                ; On                                    ; On                                    ;
+; Optimize Design for Metastability                                  ; On                                    ; On                                    ;
+; Active Serial clock source                                         ; FREQ_100MHz                           ; FREQ_100MHz                           ;
+; Force Fitter to Avoid Periphery Placement Warnings                 ; Off                                   ; Off                                   ;
+; Clamping Diode                                                     ; Off                                   ; Off                                   ;
+; Enable input tri-state on active configuration pins in user mode   ; Off                                   ; Off                                   ;
+; Advanced Physical Optimization                                     ; On                                    ; On                                    ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
 
 
 +------------------------------------------+
@@ -150,15 +150,17 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
-; Maximum used               ; 2           ;
+; Average used               ; 1.02        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   1.0%      ;
+;     Processor 3            ;   1.0%      ;
+;     Processor 4            ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -209,7 +211,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_files/neuron.pin.
+The pin-out file can be found in /home/gabriel/3DRec/neuronv1/output_files/neuron.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -255,7 +257,7 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 34 / 224           ; 15 %  ;
-;     -- Clock pins                                           ; 2 / 9              ; 22 %  ;
+;     -- Clock pins                                           ; 1 / 9              ; 11 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 11             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; M10K blocks                                                 ; 0 / 308            ; 0 %   ;
@@ -277,8 +279,8 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; Remote update blocks                                        ; 0 / 1              ; 0 %   ;
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.7% / 0.8% / 0.6% ;       ;
+; Average interconnect usage (total/H/V)                      ; 0.1% / 0.0% / 0.1% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.6% / 0.5% / 0.8% ;       ;
 ; Maximum fan-out                                             ; 19                 ;       ;
 ; Highest non-global fan-out                                  ; 17                 ;       ;
 ; Total fan-out                                               ; 227                ;       ;
@@ -379,23 +381,23 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; RST        ; T9    ; 3B       ; 19           ; 0            ; 17           ; 16                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; RST        ; U6    ; 3A       ; 12           ; 0            ; 51           ; 16                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; clk        ; M16   ; 5B       ; 54           ; 18           ; 60           ; 16                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Win[0] ; M6    ; 3A       ; 14           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Win[1] ; R6    ; 3A       ; 10           ; 0            ; 57           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Win[2] ; U6    ; 3A       ; 12           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Win[3] ; W8    ; 3A       ; 11           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Win[4] ; T7    ; 3A       ; 12           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Win[5] ; T8    ; 3A       ; 12           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Win[0] ; R5    ; 3A       ; 10           ; 0            ; 40           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Win[1] ; P7    ; 3A       ; 14           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Win[2] ; W9    ; 3A       ; 11           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Win[3] ; N6    ; 3A       ; 11           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Win[4] ; AA2   ; 2A       ; 0            ; 18           ; 77           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Win[5] ; U7    ; 3A       ; 10           ; 0            ; 91           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; slv_Win[6] ; M7    ; 3A       ; 14           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Win[7] ; V9    ; 3B       ; 16           ; 0            ; 57           ; 11                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Xin[0] ; AB6   ; 3B       ; 16           ; 0            ; 91           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Xin[1] ; P7    ; 3A       ; 14           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Xin[2] ; W9    ; 3A       ; 11           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Xin[3] ; N6    ; 3A       ; 11           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Xin[4] ; P6    ; 3A       ; 11           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Xin[5] ; P8    ; 3B       ; 18           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; slv_Xin[6] ; V6    ; 3A       ; 12           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Win[7] ; N1    ; 2A       ; 0            ; 19           ; 54           ; 11                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Xin[0] ; AA1   ; 2A       ; 0            ; 18           ; 94           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Xin[1] ; M6    ; 3A       ; 14           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Xin[2] ; W2    ; 2A       ; 0            ; 18           ; 60           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Xin[3] ; P6    ; 3A       ; 11           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Xin[4] ; W8    ; 3A       ; 11           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Xin[5] ; T8    ; 3A       ; 12           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; slv_Xin[6] ; Y3    ; 2A       ; 0            ; 18           ; 43           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; slv_Xin[7] ; R7    ; 3A       ; 14           ; 0            ; 51           ; 11                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
@@ -405,39 +407,39 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; O[0]  ; U10   ; 3B       ; 19           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[10] ; AA8   ; 3B       ; 19           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[11] ; AA10  ; 3B       ; 22           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[12] ; M8    ; 3B       ; 22           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[13] ; AA9   ; 3B       ; 22           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[14] ; T10   ; 3B       ; 23           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[15] ; V20   ; 4A       ; 44           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[1]  ; AB7   ; 3B       ; 18           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[2]  ; Y9    ; 3B       ; 23           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[3]  ; AB8   ; 3B       ; 19           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[4]  ; M9    ; 3B       ; 22           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[5]  ; Y10   ; 3B       ; 23           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[6]  ; V10   ; 3B       ; 16           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[7]  ; AA7   ; 3B       ; 18           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[8]  ; AB5   ; 3B       ; 16           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; O[9]  ; N8    ; 3B       ; 18           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[0]  ; U8    ; 3A       ; 10           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[10] ; N8    ; 3B       ; 18           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[11] ; AB7   ; 3B       ; 18           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[12] ; V10   ; 3B       ; 16           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[13] ; AB5   ; 3B       ; 16           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[14] ; T7    ; 3A       ; 12           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[15] ; AA17  ; 4A       ; 43           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[1]  ; V9    ; 3B       ; 16           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[2]  ; U10   ; 3B       ; 19           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[3]  ; R6    ; 3A       ; 10           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[4]  ; P8    ; 3B       ; 18           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[5]  ; AB8   ; 3B       ; 19           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[6]  ; AA7   ; 3B       ; 18           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[7]  ; AA8   ; 3B       ; 19           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[8]  ; V6    ; 3A       ; 12           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; O[9]  ; AB6   ; 3B       ; 16           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
-+----------------------------------------------------------------------------+
-; I/O Bank Usage                                                             ;
-+----------+------------------+---------------+--------------+---------------+
-; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
-+----------+------------------+---------------+--------------+---------------+
-; 2A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 3A       ; 13 / 16 ( 81 % ) ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 19 / 32 ( 59 % ) ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 1 / 48 ( 2 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 5B       ; 1 / 16 ( 6 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 7A       ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 8A       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-+----------+------------------+---------------+--------------+---------------+
++-----------------------------------------------------------------------------+
+; I/O Bank Usage                                                              ;
++----------+-------------------+---------------+--------------+---------------+
+; I/O Bank ; Usage             ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
++----------+-------------------+---------------+--------------+---------------+
+; 2A       ; 5 / 16 ( 31 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 3A       ; 16 / 16 ( 100 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 11 / 32 ( 34 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 1 / 48 ( 2 % )    ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 0 / 16 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
+; 5B       ; 1 / 16 ( 6 % )    ; 2.5V          ; --           ; 2.5V          ;
+; 7A       ; 0 / 48 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
+; 8A       ; 0 / 32 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
++----------+-------------------+---------------+--------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -467,23 +469,23 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; A20      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; A21      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; A22      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
-; AA1      ; 29         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AA2      ; 31         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; AA1      ; 29         ; 2A       ; slv_Xin[0]                      ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AA2      ; 31         ; 2A       ; slv_Win[4]                      ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AA3      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA4      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA5      ; 53         ; 3A       ; ^AS_DATA2, DATA2                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
 ; AA6      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AA7      ; 79         ; 3B       ; O[7]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA8      ; 82         ; 3B       ; O[10]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA9      ; 89         ; 3B       ; O[13]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA10     ; 87         ; 3B       ; O[11]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA7      ; 79         ; 3B       ; O[6]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA8      ; 82         ; 3B       ; O[7]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA9      ; 89         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AA10     ; 87         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA11     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA12     ; 105        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA13     ; 113        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA14     ; 111        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA15     ; 116        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA16     ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AA17     ; 127        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AA17     ; 127        ; 4A       ; O[15]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AA18     ; 129        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA19     ; 130        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA20     ; 132        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -493,10 +495,10 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; AB2      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB3      ; 55         ; 3A       ; ^AS_DATA1, DATA1                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
 ; AB4      ; 57         ; 3A       ; ^AS_DATA0, ASDO, DATA0          ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
-; AB5      ; 76         ; 3B       ; O[8]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB6      ; 74         ; 3B       ; slv_Xin[0]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB7      ; 81         ; 3B       ; O[1]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB8      ; 84         ; 3B       ; O[3]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB5      ; 76         ; 3B       ; O[13]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB6      ; 74         ; 3B       ; O[9]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB7      ; 81         ; 3B       ; O[11]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB8      ; 84         ; 3B       ; O[5]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AB9      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB10     ; 98         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB11     ; 100        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -736,10 +738,10 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; M3       ;            ; --       ; VCCA_FPLL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; M4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M5       ; 48         ; 3A       ; #TDO                            ; output ;              ;                     ; --           ;                 ; --       ; --           ;
-; M6       ; 70         ; 3A       ; slv_Win[0]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; M6       ; 70         ; 3A       ; slv_Xin[1]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; M7       ; 72         ; 3A       ; slv_Win[6]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; M8       ; 86         ; 3B       ; O[12]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; M9       ; 88         ; 3B       ; O[4]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; M8       ; 86         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; M9       ; 88         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; M10      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; M12      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -753,14 +755,14 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; M20      ; 179        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M21      ; 181        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M22      ; 175        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; N1       ; 24         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; N1       ; 24         ; 2A       ; slv_Win[7]                      ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; N2       ; 26         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; N3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N4       ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; N5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; N6       ; 64         ; 3A       ; slv_Xin[3]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; N6       ; 64         ; 3A       ; slv_Win[3]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; N7       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; N8       ; 80         ; 3B       ; O[9]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; N8       ; 80         ; 3B       ; O[10]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; N9       ; 104        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; N10      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; N11      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -780,9 +782,9 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; P3       ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P5       ; 50         ; 3A       ; #TMS                            ; input  ;              ;                     ; --           ;                 ; --       ; --           ;
-; P6       ; 62         ; 3A       ; slv_Xin[4]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; P7       ; 73         ; 3A       ; slv_Xin[1]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; P8       ; 78         ; 3B       ; slv_Xin[5]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; P6       ; 62         ; 3A       ; slv_Xin[3]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; P7       ; 73         ; 3A       ; slv_Win[1]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; P8       ; 78         ; 3B       ; O[4]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; P9       ; 102        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P10      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
@@ -801,8 +803,8 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; R2       ;            ; 1A, 2A   ; VCCPD1A2A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; R3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; R4       ; 49         ; 3A       ; ^nCSO, DATA4                    ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
-; R5       ; 60         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; R6       ; 58         ; 3A       ; slv_Win[1]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; R5       ; 60         ; 3A       ; slv_Win[0]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; R6       ; 58         ; 3A       ; O[3]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; R7       ; 71         ; 3A       ; slv_Xin[7]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; R8       ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; R9       ; 93         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -825,10 +827,10 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; T4       ; 51         ; 3A       ; ^AS_DATA3, DATA3                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
 ; T5       ;            ; --       ; VCCA_FPLL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; T6       ;            ; 3A       ; VCCIO3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; T7       ; 66         ; 3A       ; slv_Win[4]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; T8       ; 68         ; 3A       ; slv_Win[5]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; T9       ; 83         ; 3B       ; RST                             ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; T10      ; 91         ; 3B       ; O[14]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T7       ; 66         ; 3A       ; O[14]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T8       ; 68         ; 3A       ; slv_Xin[5]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T9       ; 83         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; T10      ; 91         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T11      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; T12      ; 110        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T13      ; 112        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -846,11 +848,11 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; U3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; U6       ; 67         ; 3A       ; slv_Win[2]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; U7       ; 59         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; U8       ; 61         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; U6       ; 67         ; 3A       ; RST                             ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U7       ; 59         ; 3A       ; slv_Win[5]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U8       ; 61         ; 3A       ; O[0]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; U9       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; U10      ; 85         ; 3B       ; O[0]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U10      ; 85         ; 3B       ; O[2]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; U11      ; 94         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U12      ; 96         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U13      ; 109        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -868,11 +870,11 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; V3       ; 56         ; 3A       ; ^DCLK                           ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
 ; V4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V5       ; 52         ; 3A       ; #TCK                            ; input  ;              ;                     ; --           ;                 ; --       ; --           ;
-; V6       ; 69         ; 3A       ; slv_Xin[6]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V6       ; 69         ; 3A       ; O[8]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; V7       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V8       ;            ; --       ; VCCPGM                          ; power  ;              ; 1.8V/2.5V/3.0V/3.3V ; --           ;                 ; --       ; --           ;
-; V9       ; 75         ; 3B       ; slv_Win[7]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; V10      ; 77         ; 3B       ; O[6]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V9       ; 75         ; 3B       ; O[1]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V10      ; 77         ; 3B       ; O[12]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; V11      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V12      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V13      ; 107        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -882,18 +884,18 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; V17      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V18      ; 149        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V19      ; 147        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; V20      ; 131        ; 4A       ; O[15]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V20      ; 131        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V21      ; 148        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V22      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W1       ;            ; 2A       ; VREFB2AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
-; W2       ; 28         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; W2       ; 28         ; 2A       ; slv_Xin[2]                      ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; W3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W5       ; 54         ; 3A       ; #TDI                            ; input  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W6       ;            ; 3A       ; VCCPD3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W7       ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; W8       ; 63         ; 3A       ; slv_Win[3]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; W9       ; 65         ; 3A       ; slv_Xin[2]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; W8       ; 63         ; 3A       ; slv_Xin[4]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; W9       ; 65         ; 3A       ; slv_Win[2]                      ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; W10      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W11      ;            ; 3B, 4A   ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W12      ;            ; 3B, 4A   ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -909,14 +911,14 @@ The pin-out file can be found in /home/gabriel/3DRecon/3DRec/neuronv1/output_fil
 ; W22      ; 140        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; Y3       ; 30         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; Y3       ; 30         ; 2A       ; slv_Xin[6]                      ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; Y4       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; Y5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y6       ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y7       ;            ; 3A       ; VREFB3AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y8       ;            ; 3A       ; VCCIO3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; Y9       ; 92         ; 3B       ; O[2]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y10      ; 90         ; 3B       ; O[5]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y9       ; 92         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; Y10      ; 90         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y11      ; 103        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y12      ;            ; 3B       ; VREFB3BN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y13      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -1044,9 +1046,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; O[15]      ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; clk        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; RST        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; slv_Xin[0] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; slv_Xin[0] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; slv_Xin[1] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; slv_Xin[2] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; slv_Xin[2] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; slv_Xin[3] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; slv_Xin[4] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; slv_Xin[5] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1057,9 +1059,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; slv_Win[2] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; slv_Win[3] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; slv_Win[4] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; slv_Win[5] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; slv_Win[5] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; slv_Win[6] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; slv_Win[7] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; slv_Win[7] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1087,11 +1089,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mac:Mult_Accum|reg[2]    ; 1                 ; 0       ;
 ;      - mac:Mult_Accum|reg[1]    ; 1                 ; 0       ;
 ; slv_Xin[0]                      ;                   ;         ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
 ; slv_Xin[1]                      ;                   ;         ;
 ;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
 ; slv_Xin[2]                      ;                   ;         ;
-;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
 ; slv_Xin[3]                      ;                   ;         ;
 ;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
 ; slv_Xin[4]                      ;                   ;         ;
@@ -1123,21 +1125,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; slv_Win[4]                      ;                   ;         ;
 ;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
 ; slv_Win[5]                      ;                   ;         ;
-;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
 ; slv_Win[6]                      ;                   ;         ;
 ;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
 ; slv_Win[7]                      ;                   ;         ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
-;      - mac:Mult_Accum|Mult0~mac ; 0                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
+;      - mac:Mult_Accum|Mult0~mac ; 1                 ; 0       ;
 +---------------------------------+-------------------+---------+
 
 
@@ -1146,9 +1148,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                          ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; RST                           ; PIN_T9             ; 16      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; RST                           ; PIN_U6             ; 16      ; Async. clear ; no     ; --                   ; --               ; --                        ;
 ; clk                           ; PIN_M16            ; 16      ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; mac:Mult_Accum|add_truncate~0 ; LABCELL_X16_Y1_N54 ; 16      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; mac:Mult_Accum|add_truncate~0 ; MLABCELL_X9_Y3_N54 ; 16      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
 +-------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1173,13 +1175,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; DSP Block Details                                                                                                                                                                                                                                                                                                                                                                                             ;
-+--------------------------+-----------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
-; Name                     ; Mode            ; Location      ; Sign Representation ; Data AX Input Register ; Data AY Input Register ; Data AZ Input Register ; Data BX Input Register ; Data BY Input Register ; Data BZ Input Register ; Output Register ; Dedicated Shift Register Chain ; Dedicated Pre-Adder ; Dedicated Coefficient Storage ; Dedicated Output Adder Chain ; Dedicated Output Accumulator ;
-+--------------------------+-----------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
-; mac:Mult_Accum|Mult0~mac ; Independent 9x9 ; DSP_X15_Y1_N0 ; Mixed               ; no                     ; no                     ; --                     ; no                     ; no                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
-+--------------------------+-----------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; DSP Block Details                                                                                                                                                                                                                                                                                                                                                                                            ;
++--------------------------+-----------------+--------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
+; Name                     ; Mode            ; Location     ; Sign Representation ; Data AX Input Register ; Data AY Input Register ; Data AZ Input Register ; Data BX Input Register ; Data BY Input Register ; Data BZ Input Register ; Output Register ; Dedicated Shift Register Chain ; Dedicated Pre-Adder ; Dedicated Coefficient Storage ; Dedicated Output Adder Chain ; Dedicated Output Accumulator ;
++--------------------------+-----------------+--------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
+; mac:Mult_Accum|Mult0~mac ; Independent 9x9 ; DSP_X8_Y3_N0 ; Mixed               ; no                     ; no                     ; --                     ; no                     ; no                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
++--------------------------+-----------------+--------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
 
 
 +-------------------------------------------------------+
@@ -1188,9 +1190,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
 ; Block interconnects          ; 67 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 0 / 6,048 ( 0 % )      ;
-; C2 interconnects             ; 31 / 54,648 ( < 1 % )  ;
-; C4 interconnects             ; 17 / 25,920 ( < 1 % )  ;
+; C12 interconnects            ; 4 / 6,048 ( < 1 % )    ;
+; C2 interconnects             ; 23 / 54,648 ( < 1 % )  ;
+; C4 interconnects             ; 32 / 25,920 ( < 1 % )  ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )         ;
@@ -1198,10 +1200,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Global clocks                ; 1 / 16 ( 6 % )         ;
 ; Local interconnects          ; 18 / 36,960 ( < 1 % )  ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 0 / 5,984 ( 0 % )      ;
-; R14/C12 interconnect drivers ; 0 / 9,504 ( 0 % )      ;
-; R3 interconnects             ; 41 / 60,192 ( < 1 % )  ;
-; R6 interconnects             ; 29 / 127,072 ( < 1 % ) ;
+; R14 interconnects            ; 3 / 5,984 ( < 1 % )    ;
+; R14/C12 interconnect drivers ; 5 / 9,504 ( < 1 % )    ;
+; R3 interconnects             ; 36 / 60,192 ( < 1 % )  ;
+; R6 interconnects             ; 41 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 1 / 120 ( < 1 % )      ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
 +------------------------------+------------------------+
@@ -1354,7 +1356,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; clk             ; clk                  ; 5.3               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
-This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
 +---------------------------------------------------------------------+
@@ -1362,22 +1364,22 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------+------------------------+-------------------+
 ; Source Register        ; Destination Register   ; Delay Added in ns ;
 +------------------------+------------------------+-------------------+
-; mac:Mult_Accum|reg[7]  ; mac:Mult_Accum|reg[15] ; 0.443             ;
-; mac:Mult_Accum|reg[9]  ; mac:Mult_Accum|reg[15] ; 0.438             ;
-; mac:Mult_Accum|reg[15] ; mac:Mult_Accum|reg[15] ; 0.436             ;
+; mac:Mult_Accum|reg[7]  ; mac:Mult_Accum|reg[15] ; 0.442             ;
+; mac:Mult_Accum|reg[15] ; mac:Mult_Accum|reg[15] ; 0.438             ;
+; mac:Mult_Accum|reg[0]  ; mac:Mult_Accum|reg[15] ; 0.437             ;
+; mac:Mult_Accum|reg[9]  ; mac:Mult_Accum|reg[15] ; 0.436             ;
 ; mac:Mult_Accum|reg[12] ; mac:Mult_Accum|reg[15] ; 0.436             ;
-; mac:Mult_Accum|reg[0]  ; mac:Mult_Accum|reg[15] ; 0.435             ;
 ; mac:Mult_Accum|reg[1]  ; mac:Mult_Accum|reg[15] ; 0.435             ;
-; mac:Mult_Accum|reg[13] ; mac:Mult_Accum|reg[15] ; 0.381             ;
-; mac:Mult_Accum|reg[8]  ; mac:Mult_Accum|reg[15] ; 0.379             ;
-; mac:Mult_Accum|reg[3]  ; mac:Mult_Accum|reg[15] ; 0.376             ;
-; mac:Mult_Accum|reg[6]  ; mac:Mult_Accum|reg[15] ; 0.373             ;
-; mac:Mult_Accum|reg[5]  ; mac:Mult_Accum|reg[15] ; 0.370             ;
-; mac:Mult_Accum|reg[2]  ; mac:Mult_Accum|reg[15] ; 0.177             ;
-; mac:Mult_Accum|reg[14] ; mac:Mult_Accum|reg[15] ; 0.172             ;
-; mac:Mult_Accum|reg[10] ; mac:Mult_Accum|reg[15] ; 0.171             ;
-; mac:Mult_Accum|reg[4]  ; mac:Mult_Accum|reg[15] ; 0.170             ;
-; mac:Mult_Accum|reg[11] ; mac:Mult_Accum|reg[15] ; 0.151             ;
+; mac:Mult_Accum|reg[8]  ; mac:Mult_Accum|reg[15] ; 0.380             ;
+; mac:Mult_Accum|reg[13] ; mac:Mult_Accum|reg[15] ; 0.375             ;
+; mac:Mult_Accum|reg[6]  ; mac:Mult_Accum|reg[15] ; 0.374             ;
+; mac:Mult_Accum|reg[3]  ; mac:Mult_Accum|reg[15] ; 0.374             ;
+; mac:Mult_Accum|reg[5]  ; mac:Mult_Accum|reg[15] ; 0.361             ;
+; mac:Mult_Accum|reg[14] ; mac:Mult_Accum|reg[15] ; 0.175             ;
+; mac:Mult_Accum|reg[2]  ; mac:Mult_Accum|reg[15] ; 0.174             ;
+; mac:Mult_Accum|reg[10] ; mac:Mult_Accum|reg[15] ; 0.167             ;
+; mac:Mult_Accum|reg[4]  ; mac:Mult_Accum|reg[15] ; 0.167             ;
+; mac:Mult_Accum|reg[11] ; mac:Mult_Accum|reg[15] ; 0.148             ;
 +------------------------+------------------------+-------------------+
 Note: This table only shows the top 16 path(s) that have the largest delay added for hold.
 
@@ -1386,7 +1388,7 @@ Note: This table only shows the top 16 path(s) that have the largest delay added
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device 5CEBA4F23C7 for design "neuron"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1401,11 +1403,11 @@ Info (184021): Fitter periphery placement operations ending: elapsed time is 00:
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:06
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'neuron.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:05
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'neuron.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
@@ -1415,20 +1417,20 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X11_Y0 to location X21_Y10
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y0 to location X10_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1840 megabytes
-    Info: Processing ended: Wed May 23 09:01:24 2018
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 2124 megabytes
+    Info: Processing ended: Sat Oct 27 16:24:12 2018
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:26
 
 
