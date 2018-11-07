@@ -1,0 +1,12 @@
+entity RELU
+    port 
+	(	Activ_in			: in signed(15 downto 0);
+		O	: out signed (15 downto 0)
+	);
+ end RELU;
+ 
+ architecture Behavioral of RELU is
+ begin
+ 
+ 
+ end Behavioral;

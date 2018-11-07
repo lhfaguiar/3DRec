@@ -1,5 +1,5 @@
 EDA Netlist Writer report for neuron
-Sat Oct 27 16:24:26 2018
+Wed Oct 31 13:20:06 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Oct 27 16:24:26 2018 ;
+; EDA Netlist Writer Status ; Successful - Wed Oct 31 13:20:06 2018 ;
 ; Revision Name             ; neuron                                ;
 ; Top-level Entity Name     ; Neuron                                ;
 ; Family                    ; Cyclone V                             ;
@@ -81,14 +81,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Oct 27 16:24:25 2018
+    Info: Processing started: Wed Oct 31 13:20:05 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off neuron -c neuron
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
 Info (204019): Generated file neuron.vo in folder "/home/gabriel/3DRec/neuronv1/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 1132 megabytes
-    Info: Processing ended: Sat Oct 27 16:24:26 2018
+    Info: Peak virtual memory: 1130 megabytes
+    Info: Processing ended: Wed Oct 31 13:20:06 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

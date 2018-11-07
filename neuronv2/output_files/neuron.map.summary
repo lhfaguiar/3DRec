@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Wed Nov  7 16:28:26 2018
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : neuron
+Top-level Entity Name : Neuron
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 17
+Total pins : 43
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 1
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
