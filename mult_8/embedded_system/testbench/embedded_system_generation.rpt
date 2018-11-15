@@ -1,0 +1,93 @@
+Info: Starting: Create testbench Platform Designer system
+Info: /home/casarin/TCC/Quartus/reg16/embedded_system/testbench/embedded_system.ipx
+Info: qsys-generate /home/casarin/TCC/Quartus/reg16/embedded_system.qsys --testbench=STANDARD --output-directory=/home/casarin/TCC/Quartus/reg16 --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading reg16/embedded_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 18.1]
+Progress: Parameterizing module hps_0
+Progress: Adding reg16_avalon_interface_0 [reg16_avalon_interface 1.0]
+Progress: Parameterizing module reg16_avalon_interface_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: embedded_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: embedded_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: embedded_system.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: embedded_system.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: embedded_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: embedded_system.hps_0: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Info: qsys-generate succeeded.
+Info: Loading IP catalog for testbench.
+Progress: 
+Progress: 
+Progress: 
+Progress: (2) searching /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/root_components.ipx
+Info: /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/root_components.ipx: Loading now from components.ipx
+Info: Reading index /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/ip_component_categories.ipx
+Info: /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/ip_component_categories.ipx described 0 plugins, 0 paths, in 0.02 seconds
+Info: /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0.03 seconds
+Info: /home/casarin/TCC/Quartus/reg16/embedded_system/testbench/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index /home/casarin/TCC/Quartus/reg16/embedded_system/testbench/embedded_system.ipx
+Progress: Loading reg16/reg16.qsys
+Progress: Loading reg16/reg16_avalon_interface_hw.tcl
+Progress: Loading reg16/embedded_system.qsys
+Info: /home/casarin/TCC/Quartus/reg16/* matched 21 files in 0.05 seconds
+Info: /home/casarin/TCC/Quartus/reg16/ip/**/* matched 0 files in 0.00 seconds
+Info: /home/casarin/TCC/Quartus/reg16/*/* matched 106 files in 0.00 seconds
+Info: /home/casarin/TCC/Quartus/reg16/embedded_system/testbench/embedded_system.ipx described 0 plugins, 3 paths, in 0.07 seconds
+Info: /home/casarin/TCC/Quartus/reg16/embedded_system/testbench/* matched 4 files in 0.07 seconds
+Info: /home/casarin/TCC/Quartus/reg16/embedded_system/testbench/*/* matched 0 files in 0.00 seconds
+Info: /home/casarin/.altera.quartus/ip/18.1/**/* matched 0 files in 0.00 seconds
+Info: /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0.00 seconds
+Info: /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0.00 seconds
+Info: /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0.00 seconds
+Info: Reading index /opt/intelFPGA_lite/18.1/ip/altera/altera_components.ipx
+Info: /opt/intelFPGA_lite/18.1/ip/altera/altera_components.ipx described 2035 plugins, 0 paths, in 0.22 seconds
+Info: /opt/intelFPGA_lite/18.1/ip/**/* matched 139 files in 0.22 seconds
+Info: /opt/intelFPGA_lite/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index /opt/intelFPGA_lite/18.1/quartus/sopc_builder/builtin.ipx
+Info: /opt/intelFPGA_lite/18.1/quartus/sopc_builder/builtin.ipx described 83 plugins, 0 paths, in 0.01 seconds
+Info: /opt/intelFPGA_lite/18.1/quartus/sopc_builder/**/* matched 9 files in 0.01 seconds
+Info: Reading index /opt/intelFPGA_lite/18.1/quartus/common/librarian/factories/index.ipx
+Info: /opt/intelFPGA_lite/18.1/quartus/common/librarian/factories/index.ipx described 151 plugins, 0 paths, in 0.02 seconds
+Info: /opt/intelFPGA_lite/18.1/quartus/common/librarian/factories/**/* matched 4 files in 0.02 seconds
+Info: /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0.00 seconds
+Info: /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/root_components.ipx described 0 plugins, 13 paths, in 0.35 seconds
+Info: /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0.35 seconds
+Progress: 
+Progress: 
+Progress: 
+Info: Running script /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/tbgen.tcl
+Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: get_module_property NAME
+Info: send_message Info TB_Gen: System design is: embedded_system
+Info: TB_Gen: System design is: embedded_system
+Info: get_interfaces 
+Info: get_connections 
+Info: get_interface_property clk EXPORT_OF
+Info: get_instance_property clk_0 CLASS_NAME
+Info: get_instance_assignment clk_0 testbench.partner.map.clk_in
+Info: get_interface_property reset EXPORT_OF
+Info: get_instance_property clk_0 CLASS_NAME
+Info: get_instance_assignment clk_0 testbench.partner.map.clk_in_reset
+Info: get_interface_property to_hex EXPORT_OF
+Info: get_instance_property reg16_avalon_interface_0 CLASS_NAME
+Info: get_instance_assignment reg16_avalon_interface_0 testbench.partner.map.conduit_end
+Info: send_message Info TB_Gen: Creating testbench system : embedded_system_tb with all standard BFMs
+Info: TB_Gen: Creating testbench system : embedded_system_tb with all standard BFMs
+Info: create_system embedded_system_tb
+Info: add_instance embedded_system_inst embedded_system 
+Info: set_use_testbench_naming_pattern true embedded_system
+Info: get_instance_interfaces embedded_system_inst
+Info: get_instance_interface_property embedded_system_inst clk CLASS_NAME
+Info: get_instance_interface_property embedded_system_inst hps_io CLASS_NAME
+Error: can't read "intf_use_partner(hps_io)": no such element in array
+Error: can't read "intf_use_partner(hps_io)": no such element in array
+Info: Done
+Error: There were errors creating the testbench system.
+Info: Finished: Create testbench Platform Designer system

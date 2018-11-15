@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="9a481a5084c313e047fe"/>
+  </project>
+  <file_info>
+    <file device="5CSXFC6D6F31C6" path="reg16.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="embedded_system:u0" name="u0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME embedded_system HAS_SOPCINFO 1 GENERATION_ID 1542307789"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

@@ -1,0 +1,24 @@
+------- PACKAGE my_functions: -----------------------------
+2 LIBRARY ieee;
+3 USE ieee.std_logic_1164.all;
+4 USE ieee.std_logic_arith.all;
+5 ----------------------------------------------------------
+6 PACKAGE my_functions IS
+7 FUNCTION add_truncate (SIGNAL a, b: SIGNED; size: INTEGER)
+8 RETURN SIGNED;
+9 END my_functions;
+10 ----------------------------------------------------------
+11 PACKAGE BODY my_functions IS
+12 FUNCTION add_truncate (SIGNAL a, b: SIGNED; size: INTEGER)
+13 RETURN SIGNED IS
+14 VARIABLE result: SIGNED (7 DOWNTO 0);
+15 BEGIN
+16 result := a + b;
+17 IF (a(a'left)=b(b'left)) AND
+18 (result(result'LEFT)/=a(a'left)) THEN
+19 result := (result'LEFT => a(a'LEFT),
+20 OTHERS => NOT a(a'left));
+21 END IF;
+22 RETURN result;
+23 END add_truncate;
+24 END my_functions;

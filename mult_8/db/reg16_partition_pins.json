@@ -1,0 +1,145 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "to_HEX[0]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[1]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[2]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[3]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[4]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[5]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[6]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[7]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[8]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[9]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[10]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[11]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[12]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[13]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[14]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[15]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[16]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[17]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[18]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[19]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[20]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[21]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[22]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[23]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[24]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[25]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[26]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[27]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[28]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[29]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[30]",
+					"strict" : false
+				},
+				{
+					"name" : "to_HEX[31]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
