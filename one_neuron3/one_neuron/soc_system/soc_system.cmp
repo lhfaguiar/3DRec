@@ -1,0 +1,47 @@
+	component soc_system is
+		port (
+			clk_clk                     : in    std_logic                     := 'X';             -- clk
+			control_base_addr           : out   std_logic_vector(31 downto 0);                    -- base_addr
+			control_clear               : out   std_logic;                                        -- clear
+			control_done                : in    std_logic                     := 'X';             -- done
+			control_kernel_size         : out   std_logic_vector(7 downto 0);                     -- kernel_size
+			control_start               : out   std_logic;                                        -- start
+			control_result              : in    std_logic_vector(31 downto 0) := (others => 'X'); -- result
+			hps_io_hps_io_sdio_inst_CMD : inout std_logic                     := 'X';             -- hps_io_sdio_inst_CMD
+			hps_io_hps_io_sdio_inst_D0  : inout std_logic                     := 'X';             -- hps_io_sdio_inst_D0
+			hps_io_hps_io_sdio_inst_D1  : inout std_logic                     := 'X';             -- hps_io_sdio_inst_D1
+			hps_io_hps_io_sdio_inst_CLK : out   std_logic;                                        -- hps_io_sdio_inst_CLK
+			hps_io_hps_io_sdio_inst_D2  : inout std_logic                     := 'X';             -- hps_io_sdio_inst_D2
+			hps_io_hps_io_sdio_inst_D3  : inout std_logic                     := 'X';             -- hps_io_sdio_inst_D3
+			img_read                    : in    std_logic                     := 'X';             -- read
+			img_write                   : in    std_logic                     := 'X';             -- write
+			img_address                 : in    std_logic_vector(31 downto 0) := (others => 'X'); -- address
+			img_writedata               : in    std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			img_readdata                : out   std_logic_vector(31 downto 0);                    -- readdata
+			img_waitrequest             : out   std_logic;                                        -- waitrequest
+			memory_mem_a                : out   std_logic_vector(12 downto 0);                    -- mem_a
+			memory_mem_ba               : out   std_logic_vector(2 downto 0);                     -- mem_ba
+			memory_mem_ck               : out   std_logic;                                        -- mem_ck
+			memory_mem_ck_n             : out   std_logic;                                        -- mem_ck_n
+			memory_mem_cke              : out   std_logic;                                        -- mem_cke
+			memory_mem_cs_n             : out   std_logic;                                        -- mem_cs_n
+			memory_mem_ras_n            : out   std_logic;                                        -- mem_ras_n
+			memory_mem_cas_n            : out   std_logic;                                        -- mem_cas_n
+			memory_mem_we_n             : out   std_logic;                                        -- mem_we_n
+			memory_mem_reset_n          : out   std_logic;                                        -- mem_reset_n
+			memory_mem_dq               : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dq
+			memory_mem_dqs              : inout std_logic                     := 'X';             -- mem_dqs
+			memory_mem_dqs_n            : inout std_logic                     := 'X';             -- mem_dqs_n
+			memory_mem_odt              : out   std_logic;                                        -- mem_odt
+			memory_mem_dm               : out   std_logic;                                        -- mem_dm
+			memory_oct_rzqin            : in    std_logic                     := 'X';             -- oct_rzqin
+			reset_reset_n               : in    std_logic                     := 'X';             -- reset_n
+			weight_read                 : in    std_logic                     := 'X';             -- read
+			weight_write                : in    std_logic                     := 'X';             -- write
+			weight_address              : in    std_logic_vector(31 downto 0) := (others => 'X'); -- address
+			weight_writedata            : in    std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			weight_readdata             : out   std_logic_vector(31 downto 0);                    -- readdata
+			weight_waitrequest          : out   std_logic                                         -- waitrequest
+		);
+	end component soc_system;
+

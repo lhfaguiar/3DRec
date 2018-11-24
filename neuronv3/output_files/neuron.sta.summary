@@ -3,99 +3,51 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : -7.629
-TNS   : -125.727
+Slack : -2.838
+TNS   : -95.845
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : 0.496
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Recovery 'clk'
-Slack : -3.873
-TNS   : -61.920
-
-Type  : Slow 1100mV 85C Model Removal 'clk'
-Slack : 1.458
+Slack : 0.565
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
 Slack : -0.724
-TNS   : -19.396
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'state_machine:UC|state'
-Slack : 0.231
-TNS   : 0.000
+TNS   : -64.862
 
 Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : -7.181
-TNS   : -118.098
+Slack : -3.007
+TNS   : -93.146
 
 Type  : Slow 1100mV 0C Model Hold 'clk'
-Slack : 0.205
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Recovery 'clk'
-Slack : -3.403
-TNS   : -54.392
-
-Type  : Slow 1100mV 0C Model Removal 'clk'
-Slack : 0.889
+Slack : 0.579
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
 Slack : -0.724
-TNS   : -19.212
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'state_machine:UC|state'
-Slack : 0.288
-TNS   : 0.000
+TNS   : -64.480
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : -4.202
-TNS   : -69.628
+Slack : -0.605
+TNS   : -11.671
 
 Type  : Fast 1100mV 85C Model Hold 'clk'
-Slack : 0.199
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Recovery 'clk'
-Slack : -2.570
-TNS   : -41.112
-
-Type  : Fast 1100mV 85C Model Removal 'clk'
-Slack : 0.960
+Slack : 0.223
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -0.078
-TNS   : -1.326
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'state_machine:UC|state'
-Slack : 0.355
-TNS   : 0.000
+Slack : -0.082
+TNS   : -4.531
 
 Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : -3.495
-TNS   : -57.728
+Slack : -0.545
+TNS   : -8.314
 
 Type  : Fast 1100mV 0C Model Hold 'clk'
-Slack : 0.190
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Recovery 'clk'
-Slack : -1.985
-TNS   : -31.744
-
-Type  : Fast 1100mV 0C Model Removal 'clk'
-Slack : 0.656
+Slack : 0.212
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : -0.080
-TNS   : -1.343
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'state_machine:UC|state'
-Slack : 0.392
-TNS   : 0.000
+Slack : -0.081
+TNS   : -4.473
 
 ------------------------------------------------------------

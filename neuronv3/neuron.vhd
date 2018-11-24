@@ -21,7 +21,8 @@ entity Neuron is
 			  reset: in STD_LOGIC;
 			  start: in STD_LOGIC;
 			  count: in std_logic_vector(7 downto 0);
-           O : out STD_LOGIC_VECTOR (15 downto 0)  
+           O : out STD_LOGIC_VECTOR (15 downto 0);
+			  count_out	 : out std_logic_vector (7 downto 0) 
 			  );
 end Neuron;
 
@@ -41,12 +42,13 @@ architecture Behavioral of Neuron is
 		start	 : in	std_logic;
 		reset	 : in	std_logic;
 		count	 : in std_logic_vector (7 downto 0);
-		status : out	std_logic 
+		status : out	std_logic ;
+		count_out	 : out std_logic_vector (7 downto 0)
 	 );
 	 end component;
     --signal Y : STD_LOGIC_VECTOR (31 downto 0); ; 
 	 signal status: std_logic;
 begin
 	Neuronio: NE port map (slv_Xin,slv_Win,clk,reset,not(status),O); 
-   UC : state_machine port map (clk,start,reset,count,status);
+   UC : state_machine port map (clk,start,reset,count,status,count_out);
 end Behavioral;

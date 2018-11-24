@@ -1,0 +1,44 @@
+	soc_system u0 (
+		.clk_clk                     (<connected-to-clk_clk>),                     //     clk.clk
+		.control_base_addr           (<connected-to-control_base_addr>),           // control.base_addr
+		.control_clear               (<connected-to-control_clear>),               //        .clear
+		.control_done                (<connected-to-control_done>),                //        .done
+		.control_kernel_size         (<connected-to-control_kernel_size>),         //        .kernel_size
+		.control_start               (<connected-to-control_start>),               //        .start
+		.hps_io_hps_io_sdio_inst_CMD (<connected-to-hps_io_hps_io_sdio_inst_CMD>), //  hps_io.hps_io_sdio_inst_CMD
+		.hps_io_hps_io_sdio_inst_D0  (<connected-to-hps_io_hps_io_sdio_inst_D0>),  //        .hps_io_sdio_inst_D0
+		.hps_io_hps_io_sdio_inst_D1  (<connected-to-hps_io_hps_io_sdio_inst_D1>),  //        .hps_io_sdio_inst_D1
+		.hps_io_hps_io_sdio_inst_CLK (<connected-to-hps_io_hps_io_sdio_inst_CLK>), //        .hps_io_sdio_inst_CLK
+		.hps_io_hps_io_sdio_inst_D2  (<connected-to-hps_io_hps_io_sdio_inst_D2>),  //        .hps_io_sdio_inst_D2
+		.hps_io_hps_io_sdio_inst_D3  (<connected-to-hps_io_hps_io_sdio_inst_D3>),  //        .hps_io_sdio_inst_D3
+		.img_read                    (<connected-to-img_read>),                    //     img.read
+		.img_write                   (<connected-to-img_write>),                   //        .write
+		.img_address                 (<connected-to-img_address>),                 //        .address
+		.img_writedata               (<connected-to-img_writedata>),               //        .writedata
+		.img_readdata                (<connected-to-img_readdata>),                //        .readdata
+		.img_waitrequest             (<connected-to-img_waitrequest>),             //        .waitrequest
+		.memory_mem_a                (<connected-to-memory_mem_a>),                //  memory.mem_a
+		.memory_mem_ba               (<connected-to-memory_mem_ba>),               //        .mem_ba
+		.memory_mem_ck               (<connected-to-memory_mem_ck>),               //        .mem_ck
+		.memory_mem_ck_n             (<connected-to-memory_mem_ck_n>),             //        .mem_ck_n
+		.memory_mem_cke              (<connected-to-memory_mem_cke>),              //        .mem_cke
+		.memory_mem_cs_n             (<connected-to-memory_mem_cs_n>),             //        .mem_cs_n
+		.memory_mem_ras_n            (<connected-to-memory_mem_ras_n>),            //        .mem_ras_n
+		.memory_mem_cas_n            (<connected-to-memory_mem_cas_n>),            //        .mem_cas_n
+		.memory_mem_we_n             (<connected-to-memory_mem_we_n>),             //        .mem_we_n
+		.memory_mem_reset_n          (<connected-to-memory_mem_reset_n>),          //        .mem_reset_n
+		.memory_mem_dq               (<connected-to-memory_mem_dq>),               //        .mem_dq
+		.memory_mem_dqs              (<connected-to-memory_mem_dqs>),              //        .mem_dqs
+		.memory_mem_dqs_n            (<connected-to-memory_mem_dqs_n>),            //        .mem_dqs_n
+		.memory_mem_odt              (<connected-to-memory_mem_odt>),              //        .mem_odt
+		.memory_mem_dm               (<connected-to-memory_mem_dm>),               //        .mem_dm
+		.memory_oct_rzqin            (<connected-to-memory_oct_rzqin>),            //        .oct_rzqin
+		.reset_reset_n               (<connected-to-reset_reset_n>),               //   reset.reset_n
+		.weight_read                 (<connected-to-weight_read>),                 //  weight.read
+		.weight_write                (<connected-to-weight_write>),                //        .write
+		.weight_address              (<connected-to-weight_address>),              //        .address
+		.weight_writedata            (<connected-to-weight_writedata>),            //        .writedata
+		.weight_readdata             (<connected-to-weight_readdata>),             //        .readdata
+		.weight_waitrequest          (<connected-to-weight_waitrequest>)           //        .waitrequest
+	);
+

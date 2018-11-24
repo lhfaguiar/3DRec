@@ -1,5 +1,5 @@
 Analysis & Synthesis report for neuron
-Wed Nov  7 16:28:26 2018
+Fri Nov 16 17:21:13 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,8 +14,8 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis DSP Block Usage Summary
-  9. User-Specified and Inferred Latches
- 10. General Register Statistics
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Parameter Settings for User Entity Instance: Top-level Entity: |neuron
  12. Parameter Settings for User Entity Instance: NE:Neuronio
  13. Post-Synthesis Netlist Statistics for Top Partition
@@ -46,14 +46,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov  7 16:28:26 2018       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 16 17:21:13 2018       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; neuron                                      ;
 ; Top-level Entity Name           ; Neuron                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 17                                          ;
-; Total pins                      ; 43                                          ;
+; Total registers                 ; 57                                          ;
+; Total pins                      ; 51                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 1                                           ;
@@ -175,40 +175,40 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                  ; Library ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
-; neuron.vhd                       ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv2/neuron.vhd       ;         ;
-; RELU.vhd                         ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv2/RELU.vhd         ;         ;
-; mac.vhd                          ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv2/mac.vhd          ;         ;
-; my_functions.vhd                 ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv2/my_functions.vhd ;         ;
+; neuron.vhd                       ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv3/neuron.vhd       ;         ;
+; RELU.vhd                         ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv3/RELU.vhd         ;         ;
+; mac.vhd                          ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv3/mac.vhd          ;         ;
+; my_functions.vhd                 ; yes             ; User VHDL File  ; /home/gabriel/3DRec/neuronv3/my_functions.vhd ;         ;
 ; ../../neuronv2/state_machine.vhd ; yes             ; User VHDL File  ; /home/gabriel/neuronv2/state_machine.vhd      ;         ;
 ; ../../neuronv2/NE.vhd            ; yes             ; User VHDL File  ; /home/gabriel/neuronv2/NE.vhd                 ;         ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                          ;
-+---------------------------------------------+------------------------+
-; Resource                                    ; Usage                  ;
-+---------------------------------------------+------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 26                     ;
-;                                             ;                        ;
-; Combinational ALUT usage for logic          ; 52                     ;
-;     -- 7 input functions                    ; 0                      ;
-;     -- 6 input functions                    ; 0                      ;
-;     -- 5 input functions                    ; 1                      ;
-;     -- 4 input functions                    ; 1                      ;
-;     -- <=3 input functions                  ; 50                     ;
-;                                             ;                        ;
-; Dedicated logic registers                   ; 17                     ;
-;                                             ;                        ;
-; I/O pins                                    ; 43                     ;
-;                                             ;                        ;
-; Total DSP Blocks                            ; 1                      ;
-;                                             ;                        ;
-; Maximum fan-out node                        ; state_machine:UC|state ;
-; Maximum fan-out                             ; 34                     ;
-; Total fan-out                               ; 315                    ;
-; Average fan-out                             ; 2.02                   ;
-+---------------------------------------------+------------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 48        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 78        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 9         ;
+;     -- 5 input functions                    ; 2         ;
+;     -- 4 input functions                    ; 16        ;
+;     -- <=3 input functions                  ; 51        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 57        ;
+;                                             ;           ;
+; I/O pins                                    ; 51        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 1         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 57        ;
+; Total fan-out                               ; 524       ;
+; Average fan-out                             ; 2.20      ;
++---------------------------------------------+-----------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -216,11 +216,11 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+---------------+--------------+
-; |Neuron                    ; 52 (0)              ; 17 (0)                    ; 0                 ; 1          ; 43   ; 0            ; |Neuron                             ; Neuron        ; work         ;
-;    |NE:Neuronio|           ; 50 (0)              ; 16 (0)                    ; 0                 ; 1          ; 0    ; 0            ; |Neuron|NE:Neuronio                 ; NE            ; work         ;
+; |Neuron                    ; 78 (0)              ; 57 (0)                    ; 0                 ; 1          ; 51   ; 0            ; |Neuron                             ; Neuron        ; work         ;
+;    |NE:Neuronio|           ; 49 (0)              ; 48 (0)                    ; 0                 ; 1          ; 0    ; 0            ; |Neuron|NE:Neuronio                 ; NE            ; work         ;
 ;       |RELU:Activation|    ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Neuron|NE:Neuronio|RELU:Activation ; RELU          ; work         ;
-;       |mac:Mult_Accum|     ; 35 (35)             ; 16 (16)                   ; 0                 ; 1          ; 0    ; 0            ; |Neuron|NE:Neuronio|mac:Mult_Accum  ; mac           ; work         ;
-;    |state_machine:UC|      ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Neuron|state_machine:UC            ; state_machine ; work         ;
+;       |mac:Mult_Accum|     ; 34 (34)             ; 48 (48)                   ; 0                 ; 1          ; 0    ; 0            ; |Neuron|NE:Neuronio|mac:Mult_Accum  ; mac           ; work         ;
+;    |state_machine:UC|      ; 29 (29)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Neuron|state_machine:UC            ; state_machine ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -237,45 +237,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                   ;
-+-----------------------------------------------------+------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal    ; Free of Timing Hazards ;
-+-----------------------------------------------------+------------------------+------------------------+
-; NE:Neuronio|mac:Mult_Accum|prod[15]                 ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[0]                  ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[14]                 ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[13]                 ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[12]                 ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[11]                 ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[10]                 ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[9]                  ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[8]                  ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[7]                  ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[6]                  ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[5]                  ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[4]                  ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[3]                  ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[2]                  ; state_machine:UC|state ; yes                    ;
-; NE:Neuronio|mac:Mult_Accum|prod[1]                  ; state_machine:UC|state ; yes                    ;
-; Number of user-specified and inferred latches = 16  ;                        ;                        ;
-+-----------------------------------------------------+------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 17    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 17    ;
-; Number of registers using Asynchronous Clear ; 17    ;
+; Total registers                              ; 57    ;
+; Number of registers using Synchronous Clear  ; 16    ;
+; Number of registers using Synchronous Load   ; 9     ;
+; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Clock Enable       ; 40    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Neuron|state_machine:UC|count_0[6]       ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Neuron|NE:Neuronio|mac:Mult_Accum|reg[9] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 
 
 +------------------------------------------------------------------------+
@@ -303,24 +287,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 17                          ;
+; arriav_ff             ; 57                          ;
 ;     CLR SLD           ; 1                           ;
-;     ENA CLR SLD       ; 16                          ;
-; arriav_lcell_comb     ; 53                          ;
-;     arith             ; 16                          ;
+;     ENA               ; 16                          ;
+;     ENA SCLR          ; 16                          ;
+;     ENA SLD           ; 8                           ;
+;     plain             ; 16                          ;
+; arriav_lcell_comb     ; 79                          ;
+;     arith             ; 32                          ;
+;         1 data inputs ; 16                          ;
 ;         2 data inputs ; 16                          ;
-;     normal            ; 37                          ;
+;     normal            ; 47                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 16                          ;
-;         3 data inputs ; 17                          ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 1                           ;
+;         2 data inputs ; 17                          ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 16                          ;
+;         5 data inputs ; 2                           ;
+;         6 data inputs ; 9                           ;
 ; arriav_mac            ; 1                           ;
-; boundary_port         ; 43                          ;
+; boundary_port         ; 51                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.50                        ;
-; Average LUT depth     ; 1.67                        ;
+; Average LUT depth     ; 1.92                        ;
 +-----------------------+-----------------------------+
 
 
@@ -339,34 +327,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov  7 16:28:16 2018
+    Info: Processing started: Fri Nov 16 17:21:02 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off neuron -c neuron
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12019): Can't analyze file -- file regn_8.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file neuron.vhd
-    Info (12022): Found design unit 1: Neuron-Behavioral File: /home/gabriel/3DRec/neuronv2/neuron.vhd Line: 28
-    Info (12023): Found entity 1: Neuron File: /home/gabriel/3DRec/neuronv2/neuron.vhd Line: 17
+    Info (12022): Found design unit 1: Neuron-Behavioral File: /home/gabriel/3DRec/neuronv3/neuron.vhd Line: 29
+    Info (12023): Found entity 1: Neuron File: /home/gabriel/3DRec/neuronv3/neuron.vhd Line: 17
 Warning (12019): Can't analyze file -- file adder_tree.vhd is missing
 Warning (12019): Can't analyze file -- file sigmoide.vhd is missing
 Info (12021): Found 2 design units, including 0 entities, in source file data_types.vhd
-    Info (12022): Found design unit 1: data_types File: /home/gabriel/3DRec/neuronv2/data_types.vhd Line: 14
-    Info (12022): Found design unit 2: data_types-body File: /home/gabriel/3DRec/neuronv2/data_types.vhd Line: 20
+    Info (12022): Found design unit 1: data_types File: /home/gabriel/3DRec/neuronv3/data_types.vhd Line: 14
+    Info (12022): Found design unit 2: data_types-body File: /home/gabriel/3DRec/neuronv3/data_types.vhd Line: 20
 Warning (12019): Can't analyze file -- file sig_altmult_accum.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file RELU.vhd
-    Info (12022): Found design unit 1: RELU-Behavioral File: /home/gabriel/3DRec/neuronv2/RELU.vhd Line: 12
-    Info (12023): Found entity 1: RELU File: /home/gabriel/3DRec/neuronv2/RELU.vhd Line: 5
+    Info (12022): Found design unit 1: RELU-Behavioral File: /home/gabriel/3DRec/neuronv3/RELU.vhd Line: 12
+    Info (12023): Found entity 1: RELU File: /home/gabriel/3DRec/neuronv3/RELU.vhd Line: 5
 Warning (12019): Can't analyze file -- file regn_16.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file mac.vhd
-    Info (12022): Found design unit 1: mac-rtl File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 19
-    Info (12023): Found entity 1: mac File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 6
+    Info (12022): Found design unit 1: mac-rtl File: /home/gabriel/3DRec/neuronv3/mac.vhd Line: 19
+    Info (12023): Found entity 1: mac File: /home/gabriel/3DRec/neuronv3/mac.vhd Line: 6
 Info (12021): Found 2 design units, including 0 entities, in source file my_functions.vhd
-    Info (12022): Found design unit 1: my_functions File: /home/gabriel/3DRec/neuronv2/my_functions.vhd Line: 6
-    Info (12022): Found design unit 2: my_functions-body File: /home/gabriel/3DRec/neuronv2/my_functions.vhd Line: 11
+    Info (12022): Found design unit 1: my_functions File: /home/gabriel/3DRec/neuronv3/my_functions.vhd Line: 6
+    Info (12022): Found design unit 2: my_functions-body File: /home/gabriel/3DRec/neuronv3/my_functions.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file /home/gabriel/neuronv2/neuron_input.v
     Info (12023): Found entity 1: neuron_input File: /home/gabriel/neuronv2/neuron_input.v Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gabriel/neuronv2/state_machine.vhd
-    Info (12022): Found design unit 1: state_machine-rtl File: /home/gabriel/neuronv2/state_machine.vhd Line: 24
+    Info (12022): Found design unit 1: state_machine-rtl File: /home/gabriel/neuronv2/state_machine.vhd Line: 25
     Info (12023): Found entity 1: state_machine File: /home/gabriel/neuronv2/state_machine.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file /home/gabriel/neuronv2/neuron_output.v
     Info (12023): Found entity 1: neuron_output File: /home/gabriel/neuronv2/neuron_output.v Line: 1
@@ -374,46 +362,24 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/g
     Info (12022): Found design unit 1: NE-Behavioral File: /home/gabriel/neuronv2/NE.vhd Line: 26
     Info (12023): Found entity 1: NE File: /home/gabriel/neuronv2/NE.vhd Line: 17
 Info (12127): Elaborating entity "neuron" for the top level hierarchy
-Info (12128): Elaborating entity "NE" for hierarchy "NE:Neuronio" File: /home/gabriel/3DRec/neuronv2/neuron.vhd Line: 50
+Info (12128): Elaborating entity "NE" for hierarchy "NE:Neuronio" File: /home/gabriel/3DRec/neuronv3/neuron.vhd Line: 52
 Info (12128): Elaborating entity "mac" for hierarchy "NE:Neuronio|mac:Mult_Accum" File: /home/gabriel/neuronv2/NE.vhd Line: 55
-Warning (10492): VHDL Process Statement warning at mac.vhd(28): signal "start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 28
-Warning (10492): VHDL Process Statement warning at mac.vhd(29): signal "a" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 29
-Warning (10492): VHDL Process Statement warning at mac.vhd(29): signal "b" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 29
-Warning (10492): VHDL Process Statement warning at mac.vhd(36): signal "reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 36
-Warning (10492): VHDL Process Statement warning at mac.vhd(38): signal "reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 38
-Warning (10631): VHDL Process Statement warning at mac.vhd(25): inferring latch(es) for signal or variable "prod", which holds its previous value in one or more paths through the process File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[0]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[1]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[2]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[3]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[4]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[5]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[6]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[7]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[8]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[9]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[10]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[11]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[12]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[13]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[14]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
-Info (10041): Inferred latch for "prod[15]" at mac.vhd(25) File: /home/gabriel/3DRec/neuronv2/mac.vhd Line: 25
 Info (12128): Elaborating entity "RELU" for hierarchy "NE:Neuronio|RELU:Activation" File: /home/gabriel/neuronv2/NE.vhd Line: 56
-Info (12128): Elaborating entity "state_machine" for hierarchy "state_machine:UC" File: /home/gabriel/3DRec/neuronv2/neuron.vhd Line: 51
+Info (12128): Elaborating entity "state_machine" for hierarchy "state_machine:UC" File: /home/gabriel/3DRec/neuronv3/neuron.vhd Line: 53
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "O[15]" is stuck at GND File: /home/gabriel/3DRec/neuronv2/neuron.vhd Line: 24
+    Warning (13410): Pin "O[15]" is stuck at GND File: /home/gabriel/3DRec/neuronv3/neuron.vhd Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 162 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 27 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 53 logic cells
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 110 logic cells
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 1069 megabytes
-    Info: Processing ended: Wed Nov  7 16:28:26 2018
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:25
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 1067 megabytes
+    Info: Processing ended: Fri Nov 16 17:21:13 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:27
 
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="111" />
+   <irq preferredWidth="34" />
+   <inputclock preferredWidth="108" />
+   <name preferredWidth="192" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/University Program/Clock,Library/University Program,Library/Memory Interfaces and Controllers/SDRAM,Library/Basic Functions/Configuration and Programming,Library/Memory Interfaces and Controllers/Memory Interfaces with UniPHY,Library/Basic Functions,Library/Memory Interfaces and Controllers,Library,Library/Basic Functions/On Chip Memory,Library/DSP,Library/University Program/Memory,Library/DSP/Video and Image Processing,Library/Memory Interfaces and Controllers/Memory Interfaces with ALTMEMPHY,Project" />
+ <window width="1853" height="1053" x="67" y="27" />
+ <generation synthesis="VHDL" greybox="0" />
+ <hdlexample language="VHDL" />
+</preferences>

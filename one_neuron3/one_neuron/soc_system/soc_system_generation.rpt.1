@@ -1,0 +1,62 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/casarin/TCC/Quartus/one_neuron/soc_system.qsys --block-symbol-file --output-directory=/home/casarin/TCC/Quartus/one_neuron/soc_system --family="Cyclone V" --part=5CSXFC6D6F31C8ES
+Progress: Loading one_neuron/soc_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 18.1]
+Progress: Parameterizing module hps_0
+Progress: Adding img [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module img
+Progress: Adding neuron_control_0 [neuron_control 1.0]
+Progress: Parameterizing module neuron_control_0
+Progress: Adding neuron_master_0 [neuron_master 1.0]
+Progress: Parameterizing module neuron_master_0
+Progress: Adding pesos [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module pesos
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Warning: soc_system.img: img.s1 must be connected to an Avalon-MM master
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/casarin/TCC/Quartus/one_neuron/soc_system.qsys --synthesis=VHDL --output-directory=/home/casarin/TCC/Quartus/one_neuron/soc_system/synthesis --family="Cyclone V" --part=5CSXFC6D6F31C8ES
+Progress: Loading one_neuron/soc_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 18.1]
+Progress: Parameterizing module hps_0
+Progress: Adding img [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module img
+Progress: Adding neuron_control_0 [neuron_control 1.0]
+Progress: Parameterizing module neuron_control_0
+Progress: Adding neuron_master_0 [neuron_master 1.0]
+Progress: Parameterizing module neuron_master_0
+Progress: Adding pesos [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module pesos
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Warning: soc_system.img: img.s1 must be connected to an Avalon-MM master
+Info: soc_system: Generating soc_system "soc_system" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master neuron_master_0.avalon_master and slave hps_0.f2h_axi_slave because the master is of type avalon and the slave is of type axi.
+Info: Interconnect is inserted between master hps_0.h2f_axi_master and slave pesos.s1 because the master is of type axi and the slave is of type avalon.
+Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave neuron_control_0.avalon_slave_0 because the master is of type axi and the slave is of type avalon.
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: img: Starting RTL generation for module 'soc_system_img'
+Info: img:   Generation command is [exec /opt/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=soc_system_img --dir=/tmp/alt7858_4890852812234086116.dir/0002_img_gen/ --quartus_dir=/opt/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt7858_4890852812234086116.dir/0002_img_gen//soc_system_img_component_configuration.pl  --do_build_sim=0  ]

@@ -22,21 +22,19 @@ architecture rtl of mac is
 	signal prod,reg: SIGNED(15 downto 0);
 
 begin
-	process (rst,clk)
-		variable sum: signed(15 downto 0);
-	begin
-		if (start='1') then
-			prod <= a * b;
-			IF (rst='1') THEN
+	PROCESS
+		variable sum: signed(15 downto 0);	
+	BEGIN
+		WAIT UNTIL clk'EVENT AND clk = '1';
+			IF rst = '0' THEN
 				reg <= (OTHERS => '0');
-			ELSIF (clk'EVENT AND clk='1') THEN
-				sum := add_truncate (prod,reg,16);
-				reg <= sum;
+			ELSE
+				if start = '1' then
+					prod <= (a * b);
+					sum := add_truncate(prod,reg,16);
+					reg <= sum;	
+				end if;
 			END IF;
-			accum_out <= reg;
-		else
-			accum_out <= reg;
-		end if;
+		accum_out <=reg;
 	end process;
-	
 end rtl;

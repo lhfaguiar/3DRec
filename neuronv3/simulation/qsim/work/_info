@@ -9,7 +9,7 @@ z2
 cModel Technology
 d/home/gabriel/3DRecon/3DRec/neuronv1/simulation/qsim
 Eneuron
-Z0 w1541612088
+Z0 w1542396152
 Z1 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 OGn598C_0mX<WSGfCb?AK2
 Z2 DPx8 cyclonev 19 cyclonev_components 0 22 CcdNAEi>PYH4@n><]NQ]V2
 Z3 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
@@ -19,18 +19,18 @@ Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z9 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
-Z10 d/home/gabriel/3DRec/neuronv2/simulation/qsim
+Z10 d/home/gabriel/3DRec/neuronv3/simulation/qsim
 Z11 8neuron.vho
 Z12 Fneuron.vho
 l0
 L38
-V0_U8ofBPl7[mVj1EbdDfZ0
-!s100 ;zTZ6gSfLz;2LGSIhfZgL1
+VRP7;fl2>e9V`mZTLQmMff1
+!s100 O5SDgfN5QD=39m]Kgm7[X2
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1541612089
+Z14 !s110 1542396153
 !i10b 1
-Z15 !s108 1541612089.000000
+Z15 !s108 1542396153.000000
 Z16 !s90 -work|work|neuron.vho|
 Z17 !s107 neuron.vho|
 !i113 1
@@ -46,11 +46,11 @@ R6
 R7
 R8
 R9
-DEx4 work 6 neuron 0 22 0_U8ofBPl7[mVj1EbdDfZ0
-l270
-L89
-VS7mBe5;3fW^DZKmbeiQQC0
-!s100 KSj@8OGd?XBX1W>DF6=_]3
+DEx4 work 6 neuron 0 22 RP7;fl2>e9V`mZTLQmMff1
+l375
+L105
+VQdK7;TIO[7EeE@=o78joz0
+!s100 h^jUI<VMTeH?[F7z4c_:N1
 R13
 32
 R14
@@ -62,12 +62,12 @@ R17
 R18
 R19
 Eneuron_vhd_vec_tst
-Z20 w1541612087
+Z20 w1542396151
 R7
 R8
 R10
-Z21 8Waveform3.vwf.vht
-Z22 FWaveform3.vwf.vht
+Z21 8Waveform2.vwf.vht
+Z22 FWaveform2.vwf.vht
 l0
 L31
 VHz>k5bljg2WG4W@OZWT1P1
@@ -77,8 +77,8 @@ R13
 R14
 !i10b 1
 R15
-Z23 !s90 -work|work|Waveform3.vwf.vht|
-Z24 !s107 Waveform3.vwf.vht|
+Z23 !s90 -work|work|Waveform2.vwf.vht|
+Z24 !s107 Waveform2.vwf.vht|
 !i113 1
 R18
 R19
@@ -86,10 +86,10 @@ Aneuron_arch
 R7
 R8
 Z25 DEx4 work 18 neuron_vhd_vec_tst 0 22 Hz>k5bljg2WG4W@OZWT1P1
-l54
+l56
 L33
-V3RoISB>ZJ9bYZY0Sc<6`o0
-!s100 [zO[C[g6eF64D[g1Vh14_2
+V^_THKPg8E:ON[;H:kJ[N73
+!s100 Z<_T7L?a`4DaEIk@>n7A<2
 R13
 32
 R14
