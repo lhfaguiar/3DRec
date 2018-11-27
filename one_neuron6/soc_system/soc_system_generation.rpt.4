@@ -1,0 +1,124 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system.qsys --block-symbol-file --output-directory=/home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system --family="Cyclone V" --part=5CSXFC6D6F31C8ES
+Progress: Loading one_neuron4/soc_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 18.1]
+Progress: Parameterizing module hps_0
+Progress: Adding neuron_control_0 [neuron_control 1.0]
+Progress: Parameterizing module neuron_control_0
+Progress: Adding neuron_master_ocr [neuron_master 1.0]
+Progress: Parameterizing module neuron_master_ocr
+Progress: Adding neuron_master_pesos [neuron_master 1.0]
+Progress: Parameterizing module neuron_master_pesos
+Progress: Adding ocr [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module ocr
+Progress: Adding pesos [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module pesos
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Warning: soc_system.ocr: ocr.s2 must be connected to an Avalon-MM master
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system.qsys --synthesis=VHDL --output-directory=/home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system/synthesis --family="Cyclone V" --part=5CSXFC6D6F31C8ES
+Progress: Loading one_neuron4/soc_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 18.1]
+Progress: Parameterizing module hps_0
+Progress: Adding neuron_control_0 [neuron_control 1.0]
+Progress: Parameterizing module neuron_control_0
+Progress: Adding neuron_master_ocr [neuron_master 1.0]
+Progress: Parameterizing module neuron_master_ocr
+Progress: Adding neuron_master_pesos [neuron_master 1.0]
+Progress: Parameterizing module neuron_master_pesos
+Progress: Adding ocr [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module ocr
+Progress: Adding pesos [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module pesos
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Warning: soc_system.ocr: ocr.s2 must be connected to an Avalon-MM master
+Info: soc_system: Generating soc_system "soc_system" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master neuron_master_pesos.avalon_master and slave pesos.s2 because the master has read signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master neuron_master_pesos.avalon_master and slave pesos.s2 because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master neuron_master_pesos.avalon_master and slave pesos.s2 because the master has address signal 32 bit wide, but the slave is 6 bit wide.
+Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave neuron_control_0.avalon_slave_0 because the master is of type axi and the slave is of type avalon.
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: neuron_control_0: "soc_system" instantiated neuron_control "neuron_control_0"
+Info: neuron_master_ocr: "soc_system" instantiated neuron_master "neuron_master_ocr"
+Info: ocr: Starting RTL generation for module 'soc_system_ocr'
+Info: ocr:   Generation command is [exec /home/gabriel/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/gabriel/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/gabriel/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/gabriel/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/gabriel/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/gabriel/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/gabriel/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/gabriel/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=soc_system_ocr --dir=/tmp/alt7861_5472289523397210327.dir/0005_ocr_gen/ --quartus_dir=/home/gabriel/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt7861_5472289523397210327.dir/0005_ocr_gen//soc_system_ocr_component_configuration.pl  --do_build_sim=0  ]
+Info: ocr: Done RTL generation for module 'soc_system_ocr'
+Info: ocr: "soc_system" instantiated altera_avalon_onchip_memory2 "ocr"
+Info: pesos: Starting RTL generation for module 'soc_system_pesos'
+Info: pesos:   Generation command is [exec /home/gabriel/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/gabriel/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/gabriel/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/gabriel/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/gabriel/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/gabriel/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/gabriel/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/gabriel/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=soc_system_pesos --dir=/tmp/alt7861_5472289523397210327.dir/0006_pesos_gen/ --quartus_dir=/home/gabriel/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt7861_5472289523397210327.dir/0006_pesos_gen//soc_system_pesos_component_configuration.pl  --do_build_sim=0  ]
+Info: pesos: Done RTL generation for module 'soc_system_pesos'
+Info: pesos: "soc_system" instantiated altera_avalon_onchip_memory2 "pesos"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: mm_interconnect_1: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_2: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: neuron_master_ocr_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "neuron_master_ocr_avalon_master_translator"
+Info: ocr_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "ocr_s1_translator"
+Info: hps_0_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_axi_master_agent"
+Info: neuron_master_ocr_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "neuron_master_ocr_avalon_master_agent"
+Info: ocr_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "ocr_s1_agent"
+Info: ocr_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "ocr_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: hps_0_h2f_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_0_h2f_axi_master_wr_limiter"
+Info: Reusing file /home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: ocr_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "ocr_s1_burst_adapter"
+Info: Reusing file /home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file /home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file /home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file /home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_2" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file /home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/gabriel/Downloads/Monografia/one_neuron4/one_neuron4/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: soc_system: Done "soc_system" with 41 modules, 101 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

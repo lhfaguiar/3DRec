@@ -1,0 +1,96 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity neuron is
+    port (
+        clock, resetn : in std_logic;
+        read, write : in  std_logic;
+        byteenable  : in  std_logic_vector(3 downto 0);
+        address     : in  std_logic_vector(1 downto 0);
+        writedata   : in  std_logic_vector(31 downto 0);
+        readdata    : out std_logic_vector(31 downto 0)
+    ) ;
+end neuron ;
+
+
+architecture arch of neuron is
+
+    -- Components
+    component neuron_uc is
+        port (
+            clock    : in   std_logic;
+            start	 : in	std_logic;
+            resetn	 : in	std_logic;
+            count	 : in   std_logic_vector (7 downto 0);
+            enable   : out  std_logic
+        );
+    end component;
+
+    component neuron_dp is
+        port (
+            clock, resetn, enable: in std_logic;
+            X, W : in std_logic_vector(15 downto 0);
+            Y : out std_logic_vector(31 downto 0)
+        ) ;
+    end component;
+
+    component neuron_av is
+        port (
+            clock, resetn : in std_logic;
+            read, write : in  std_logic;
+            byteenable  : in  std_logic_vector(3 downto 0);
+            inp         : out std_logic_vector(31 downto 0);
+            peso        : out std_logic_vector(31 downto 0);
+            out_neuron  : in  std_logic_vector(31 downto 0);
+            address     : in  std_logic_vector(1 downto 0);
+            writedata   : in  std_logic_vector(31 downto 0);
+            readdata    : out std_logic_vector(31 downto 0)
+        ) ;
+    end component;
+
+    -- Signals
+    signal inp, peso : std_logic_vector(31 downto 0) ;
+    signal out_neuron: std_logic_vector(31 downto 0) ;
+    signal ok : std_logic;
+    signal enable : std_logic;
+
+begin
+
+    ok <= address(0);
+
+    uc : component neuron_uc
+        port map (
+            clock => clock,
+            start => ok,
+            resetn => resetn,
+            count => (1 => '1', others => '0'),
+            enable => enable
+        );
+
+    dp : component neuron_dp
+        port map (
+            clock => clock,
+            resetn => resetn,
+            enable => enable,
+            X => inp(15 downto 0),
+            W => peso(15 downto 0),
+            Y => out_neuron
+        );
+
+    av : component neuron_av
+        port map (
+            clock => clock,
+            resetn => resetn,
+            read => read,
+            write => write,
+            byteenable => byteenable,
+            address => address,
+            writedata => writedata,
+            readdata => readdata,
+            inp => inp,
+            peso => peso,
+            out_neuron => out_neuron
+        ) ;
+
+end architecture ;
