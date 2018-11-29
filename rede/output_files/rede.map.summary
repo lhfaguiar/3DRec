@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Thu Nov 29 15:12:40 2018
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : rede
+Top-level Entity Name : top_level
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 1018
+Total pins : 50
+Total virtual pins : 0
+Total block memory bits : 65,536
+Total DSP Blocks : 1
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 1
