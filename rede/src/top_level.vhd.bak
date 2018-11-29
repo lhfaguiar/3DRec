@@ -1,0 +1,42 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity top_level is
+    port (
+        key : in std_logic ;
+        Y_out : out std_logic_vector(31 downto 0) ;
+        clock, resetn : in std_logic
+    );
+end entity;
+
+
+architecture arch of top_level is
+
+    component neuron
+    port (
+        X      : in  std_logic_vector(15 downto 0);
+        W      : in  std_logic_vector(15 downto 0);
+        Y      : out std_logic_vector(31 downto 0);
+        enable : in  std_logic;
+        resetn : in  std_logic
+    );
+    end component neuron;
+
+
+    signal X, W : in std_logic_vector(15 downto 0);
+
+begin
+
+    X <= (0 => '1', others => '0');
+    W <= (0 => '1', others => '0');
+
+    neuron_0 : neuron port map (
+        X => X,
+        W => W,
+        Y => Y_out,
+        enable => '1',
+        clock => key
+    );
+
+end architecture;

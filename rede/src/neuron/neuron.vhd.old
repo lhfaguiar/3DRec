@@ -1,0 +1,106 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity neuron is
+    port (
+        clock, resetn   : in  std_logic ;
+
+        start, clear    : in  std_logic ;
+        done            : out std_logic ;
+        base_addr       : in  std_logic_vector(31 downto 0) ;
+        kernel_size     : in  std_logic_vector( 7 downto 0) ;
+
+        read            : out std_logic ;
+        write           : out std_logic ;
+        waitrequest     : in  std_logic ;
+
+        X, W            : in std_logic_vector(15 downto 0);
+        Y               : out std_logic_vector(31 downto 0);
+        addr_img, addr_wei : out std_logic_vector(31 downto 0);
+        state_out : out std_logic_vector(1 downto 0)
+    ) ;
+end neuron ;
+
+
+architecture arch of neuron is
+
+    -- Components
+    component neuron_uc
+    port (
+      start           : in  std_logic;
+      done_read_ram   : in  std_logic;
+      waitrequest     : in  std_logic;
+      read, write     : out std_logic;
+      enable_read_ram : out std_logic;
+      enable_mac : out std_logic;
+      clock, resetn   : in  std_logic
+    );
+    end component neuron_uc;
+
+
+    component neuron_dp
+    port (
+      X, W        : in  std_logic_vector(15 downto 0);
+      Y        : out std_logic_vector(31 downto 0);
+      addr_img, addr_wei : out std_logic_vector(31 downto 0);
+      clock, resetn   : in  std_logic;
+      n         : in std_logic_vector(7 downto 0);
+      base_addr : in std_logic_vector(31 downto 0);
+      done : out std_logic;
+      enable_read_ram : in std_logic;
+      enable_mac : in std_logic
+    );
+    end component neuron_dp;
+
+
+    -- -- Signals
+    -- signal kernel_size : std_logic_vector( 7 downto 0);
+    -- signal base_addr   : std_logic_vector(31 downto 0);
+    -- signal start       : std_logic;
+    -- signal mac_read    : std_logic;
+    -- signal mac_write   : std_logic;
+    -- signal waitreq     : std_logic;
+    -- signal done        : std_logic;
+    -- signal mac_address : std_logic_vector(29 downto 0) ;
+    -- -- signal mac_writedata : std_logic_vector(31 downto 0) ;
+    -- signal mac_readdata : std_logic_vector(31 downto 0) ;
+
+    signal done_read_ram   : std_logic;
+    signal enable_read_ram : std_logic;
+    signal enable_mac : std_logic;
+
+
+begin
+
+    uc : neuron_uc
+        port map (
+            start           => start,
+            done_read_ram   => done_read_ram,
+            waitrequest     => waitrequest,
+            read            => read,
+            write           => write,
+            enable_read_ram => enable_read_ram,
+            enable_mac      => enable_mac,
+            clock           => clock,
+            resetn          => resetn
+        );
+
+
+    neuron_dp_i : neuron_dp
+        port map (
+            X        => X,
+            W        => W,
+            Y        => Y,
+            addr_wei => addr_wei,
+            addr_img => addr_img,
+            clock => clock,
+            resetn   => resetn,
+            base_addr => base_addr,
+            n         => kernel_size,
+            done => done_read_ram,
+            enable_read_ram => enable_read_ram,
+            enable_mac => enable_mac
+        );
+
+end architecture ;
